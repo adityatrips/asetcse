@@ -142,7 +142,7 @@ export default function Navbar() {
 			],
 		},
 		{
-			title: 'International Exposure',
+			title: 'International Relations',
 			expandable: true,
 			content: [
 				{
@@ -192,23 +192,83 @@ export default function Navbar() {
 					expanded ? 'bg-[rgba(0,0,0,0.5)]' : 'hidden'
 				}`}
 			></div>
-			<nav className='flex justify-center items-center z-30'>
-				<Image
-					height={50}
-					width={50}
-					src={require('../../../images/icons/menu.svg')}
-					alt='Menu'
-					className='fixed w-[10vh] p-5 top-0 left-0 cursor-pointer z-30 bg-white drop-shadow-xl'
-					onClick={toggleSidebar}
-				/>
-				<Image
-					src={require('@/images/auup-logo.png')}
-					alt='Amity University Uttar Pradesh'
-					objectFit='contain'
-					quality={100}
-					className='h-[10vh] w-[auto]'
-				/>
+
+			{/* NAVBAR  */}
+
+			<nav>
+				<div className='h-[15vh] flex justify-center items-center z-30'>
+					<Image
+						height={50}
+						width={50}
+						src={require('../../images/icons/menu.svg')}
+						alt='Menu'
+						className='md:hidden fixed w-[10vh] p-5 top-[2.5vh] left-[2.5vh] cursor-pointer z-30 bg-white drop-shadow-2xl'
+						onClick={toggleSidebar}
+					/>
+					<Image
+						src={require('@/images/auup-logo.png')}
+						alt='Amity University Uttar Pradesh'
+						quality={100}
+						className='h-[10vh] w-[auto]'
+					/>
+				</div>
+				<div className='flex justify-center items-center md:py-10'>
+					{accordionData.map((item, index) => {
+						return (
+							<div
+								key={index}
+								className='hidden md:block'
+							>
+								<a
+									href='#'
+									className='px-4 py-2 text-lg font-semibold text-black hover:text-blue-500 relative flex gap-2'
+									onMouseEnter={() => {
+										document
+											.getElementById(item.title)
+											.classList.remove('hidden');
+									}}
+									onMouseLeave={() => {
+										document.getElementById(item.title).classList.add('hidden');
+									}}
+								>
+									{item.title}
+									{item.expandable && (
+										<Image
+											src={require('@/images/icons/expand.svg')}
+											alt='Arrow Down'
+											width={20}
+											height={20}
+											className='inline'
+										/>
+									)}
+									<div
+										className='absolute hidden top-[3rem] drop-shadow-lg bg-white rounded-md'
+										id={item.title}
+									>
+										{item.expandable && (
+											<div>
+												{item.content.map((subItem, index) => {
+													return (
+														<div
+															key={index}
+															className='px-4 py-2 text-lg font-semibold text-black hover:text-blue-500'
+														>
+															{subItem.title}
+														</div>
+													);
+												})}
+											</div>
+										)}
+									</div>
+								</a>
+							</div>
+						);
+					})}
+				</div>
 			</nav>
+
+			{/* SIDEBAR */}
+
 			<div
 				className={`fixed transition-all duration-200 top-0 ${
 					expanded ? 'left-0' : '-left-full'
@@ -218,7 +278,7 @@ export default function Navbar() {
 				<Accordion accordionData={accordionData} />
 				<div className='absolute hidden md:block bottom-0 left-0 m-[2%] w-[96%] h-[50px] bg-white'>
 					<Image
-						fill
+						alt='AUUP Logo'
 						src={require('@/images/logo.png')}
 					/>
 				</div>

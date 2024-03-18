@@ -1,6 +1,6 @@
 import { Nunito_Sans, Noto_Sans_Symbols } from 'next/font/google';
 import './globals.css';
-import Navbar from './componsents/shared/Navbar';
+import Navbar from '@/components/shared/Navbar';
 
 const nunitoSans = Nunito_Sans({ subsets: ['latin'] });
 

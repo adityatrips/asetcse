@@ -26,7 +26,7 @@ const Accordion = ({ accordionData }) => {
 						{item.title}
 						{item.expandable && (
 							<Image
-								src={require('../../../images/icons/expand.svg')}
+								src={require('../../images/icons/expand.svg')}
 								alt='Arrow Down'
 							/>
 						)}

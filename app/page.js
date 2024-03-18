@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './componsents/shared/Navbar';
+import Navbar from '@/components/shared/Navbar';
 import Image from 'next/image';
 
 export default function HomePage() {
@@ -8,6 +8,8 @@ export default function HomePage() {
 		<Navbar /><div className='z-0'>
 			<Image
 				alt='Amity Campus'
+				height='auto'
+				widht='auto'
 				className='h-[auto] max-h-[75vh] object-cover w-[100%]'
 				src={require('@/images/Amity-campus.jpg')}
 			/>
@@ -44,9 +46,9 @@ export default function HomePage() {
 			<div className='px-5 py-10'>
 				<h1 className='title'>HOI&apos;S Message</h1>
 
-				<blockquote class='m-10 md:m-20'>
-					<div class='z-10'>
-						<p class='text-gray-800 font-medium'>
+				<blockquote className='m-10 md:m-20'>
+					<div className='z-10'>
+						<p className='text-gray-800 font-medium'>
 							<em>
 								Amity School of Engineering and Technology aim to develop
 								globally adaptable professionals with social sensitivity. The
@@ -84,20 +86,20 @@ export default function HomePage() {
 						</p>
 					</div>
 
-					<footer class='mt-12'>
-						<div class='flex items-center'>
-							<div class='flex-shrink-0'>
+					<footer className='mt-12'>
+						<div className='flex items-center'>
+							<div className='flex-shrink-0'>
 								<Image
-									class='size-20 rounded-full'
+									className='size-20 rounded-full'
 									src={require('@/images/mkpandey.jpeg')}
 									alt='Image Description'
 								/>
 							</div>
-							<div class='ms-4'>
-								<div class='text-xl font-semibold text-black '>
+							<div className='ms-4'>
+								<div className='text-xl font-semibold text-black '>
 									Prof. (Dr.) Manoj Kumar Pandey
 								</div>
-								<div class='text-md text-gray-500'>Head of Institution</div>
+								<div className='text-md text-gray-500'>Head of Institution</div>
 							</div>
 						</div>
 					</footer>
@@ -106,98 +108,98 @@ export default function HomePage() {
 
 			<div className='px-5 py-10'>
 				<h1 className='title'>Placement Partners</h1>
-				<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
-					<div class='flex justify-center items-center'>
+				<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/accenture.jpg')}
 							alt='accenture'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/british-gas.jpg')}
 							alt='british-gas'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/capegemini.jpg')}
 							alt='capegemini'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/csc.jpg')}
 							alt='csc'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/dell.jpg')}
 							alt='dell'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/flipkart.jpg')}
 							alt='flipkart'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/ibm.jpg')}
 							alt='ibm'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/icicic.jpg')}
 							alt='icicic'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/igate.jpg')}
 							alt='igate'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/indian-navy.jpg')}
 							alt='indian-navy'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/indianoil.jpg')}
 							alt='indianoil'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/microsoft.jpg')}
 							alt='microsoft'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/tata.jpg')}
 							alt='tata'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/unilibwe.jpg')}
 							alt='unilibwe'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/videocon.jpg')}
 							alt='videocon'
 						/>
 					</div>
-					<div class='flex justify-center items-center'>
+					<div className='flex justify-center items-center'>
 						<Image
 							src={require('@/images/wipro.jpg')}
 							alt='wipro'
