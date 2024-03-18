@@ -8,7 +8,7 @@ const NotFound = () => {
 			<Image
 				width={300}
 				height={300}
-				src={JSON.parse(JSON.stringify(require('@/images/404.svg')))}
+				src={JSON.parse(JSON.stringify(require('../images/404.svg')))}
 				alt='Error'
 				className='mb-8'
 			/>

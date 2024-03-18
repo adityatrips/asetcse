@@ -88,16 +88,6 @@ const ClubActivities = () => {
 					</div>
 				))}
 			</div>
-			<div className='py-10 px-5'>
-				<h1 className='title'>Select a club to view it&apos;s details</h1>
-				<iframe
-					id='frame'
-					src=''
-					frameborder='0'
-					width={'100%'}
-					height={'100vh'}
-				></iframe>
-			</div>
 		</div>
 	);
 };

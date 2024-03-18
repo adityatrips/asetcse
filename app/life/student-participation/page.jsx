@@ -3,7 +3,7 @@ import React from 'react';
 
 const data = [
 	{
-		img: JSON.parse(JSON.stringify(require('@/images/student/1.jpg'))),
+		img: JSON.parse(JSON.stringify(require('../../../images/student/1.jpg'))),
 		text: "Mr. Abhishek Bhattacharya, An Alumnus (B.Tech-CSE Class of 2017, ASET, Noida) Co -founder Whrrl & Bru Finance recently received the National Startup Award, '22 in the presence of Shri Piyush Goyal ji.",
 	},
 	{

@@ -1,6 +1,6 @@
 'use client';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import NextBreadcrumb from '@/components/Breadcrumbs';
+import Navbar from '../../../components/shared/Navbar';
+import Breadcrumbs from '../../../components/Breadcrumbs';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
