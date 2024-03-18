@@ -10,7 +10,7 @@ export default function HomePage() {
 				height='auto'
 				widht='auto'
 				className='h-[auto] max-h-[75vh] object-cover w-[100%]'
-				src={require('@/images/Amity-campus.jpg')}
+				src={JSON.parse(JSON.stringify(require('@/images/Amity-campus.jpg')))}
 			/>
 
 			<h1 className='title-bg text-center uppercase text-white font-extrabold text-2xl py-2'>
@@ -90,7 +90,9 @@ export default function HomePage() {
 							<div className='flex-shrink-0'>
 								<Image
 									className='size-20 rounded-full'
-									src={require('@/images/mkpandey.jpeg')}
+									src={JSON.parse(
+										JSON.stringify(require('@/images/mkpandey.jpeg'))
+									)}
 									alt='Image Description'
 								/>
 							</div>
@@ -110,97 +112,113 @@ export default function HomePage() {
 				<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/accenture.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/accenture.jpg'))
+							)}
 							alt='accenture'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/british-gas.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/british-gas.jpg'))
+							)}
 							alt='british-gas'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/capegemini.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/capegemini.jpg'))
+							)}
 							alt='capegemini'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/csc.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/csc.jpg')))}
 							alt='csc'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/dell.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/dell.jpg')))}
 							alt='dell'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/flipkart.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/flipkart.jpg')))}
 							alt='flipkart'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/ibm.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/ibm.jpg')))}
 							alt='ibm'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/icicic.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/icicic.jpg')))}
 							alt='icicic'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/igate.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/igate.jpg')))}
 							alt='igate'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/indian-navy.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/indian-navy.jpg'))
+							)}
 							alt='indian-navy'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/indianoil.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/indianoil.jpg'))
+							)}
 							alt='indianoil'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/microsoft.jpg')}
+							src={JSON.parse(
+								JSON.stringify(require('@/images/microsoft.jpg'))
+							)}
 							alt='microsoft'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/tata.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/tata.jpg')))}
 							alt='tata'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/unilibwe.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/unilibwe.jpg')))}
 							alt='unilibwe'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/videocon.jpg')}
+							src={JSON.parse(JSON.stringify(require('@/images/videocon.jpg')))}
 							alt='videocon'
 						/>
 					</div>
 					<div className='flex justify-center items-center'>
 						<Image
-							src={require('@/images/wipro.jpg')}
+							src={JSON.parse(
+								JSON.stringify(
+									JSON.parse(JSON.stringify(require('@/images/wipro.jpg')))
+								)
+							)}
 							alt='wipro'
 						/>
 					</div>

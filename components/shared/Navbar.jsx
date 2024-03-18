@@ -3,177 +3,200 @@
 import Image from 'next/image';
 import React from 'react';
 import Accordion from './Accordion';
+import Link from 'next/link';
 
 export default function Navbar() {
 	let accordionData = [
 		{
-			title: 'Home',
-			expandable: false,
-		},
-		{
 			title: 'About',
+			id: 'about',
 			expandable: true,
 			content: [
-				{
-					title: 'Overview',
-					content: null,
-					child: true,
-				},
 				{
 					title: 'Programmes Offered',
 					content: null,
 					child: true,
+					href: '/about/programmes',
 				},
 				{
 					title: 'Social Media',
 					content: null,
 					child: true,
+					href: '/about/social-media',
 				},
 			],
 		},
 		{
 			title: 'Life@CSE',
+			id: 'lifeatcse',
 			expandable: true,
 			content: [
 				{
 					title: 'Student Participation & Achievements',
 					content: null,
 					child: true,
+					href: '/life/student-participation',
 				},
 				{
 					title: 'Club / Committee Activities',
 					content: null,
 					child: true,
+					href: '/life/club-activities',
 				},
 				{
 					title: 'Student Chapters',
 					content: null,
 					child: true,
+					href: '/life/student-chapters',
 				},
 				{
 					title: 'Parent Feedback',
 					content: null,
 					child: true,
+					href: '/life/parent-feedback',
 				},
 				{
 					title: 'Industry Feedback',
 					content: null,
 					child: true,
+					href: '/life/industry-feedback',
 				},
 			],
 		},
 		{
 			title: 'Events@CSE',
+			id: 'eventsatcse',
 			expandable: true,
 			content: [
 				{
 					title: 'Conferences',
 					content: null,
 					child: true,
+					href: '/events/conferences',
 				},
 				{
 					title: 'Guest Lectures',
 					content: null,
 					child: true,
+					href: '/events/guest-lectures',
 				},
 				{
 					title: 'Workshops',
 					content: null,
 					child: true,
+					href: '/events/workshops',
 				},
 			],
 		},
 		{
 			title: 'Innovations',
+			id: 'innovations',
 			expandable: true,
 			content: [
 				{
 					title: 'Publications/Patents/Projects',
 					content: null,
 					child: true,
+					href: '/innovations/publications',
 				},
 				{
 					title: 'Entrepreneurs',
 					content: null,
 					child: true,
+					href: '/innovations/entrepreneurs',
 				},
 				{
 					title: 'Student Innovation',
 					content: null,
 					child: true,
+					href: '/innovations/student-innovation',
 				},
 				{
 					title: 'Student Awards',
 					content: null,
 					child: true,
+					href: '/innovations/student-awards',
 				},
 			],
 		},
 		{
 			title: 'Faculty@CSE',
+			id: 'facultyatcse',
 			expandable: true,
 			content: [
 				{
 					title: 'Honory Professors',
 					content: null,
 					child: true,
+					href: '/faculty/honory-professors',
 				},
 				{
 					title: 'Faculty',
 					content: null,
 					child: true,
+					href: '/faculty/faculty',
 				},
 			],
 		},
 		{
 			title: 'Alumni',
+			id: 'alumni',
 			expandable: true,
 			content: [
 				{
 					title: 'Alumni Awards',
 					content: null,
 					child: true,
+					href: '/alumni/alumni-awards',
 				},
 				{
 					title: 'Alumni Messages',
 					content: null,
 					child: true,
+					href: '/alumni/alumni-messages',
 				},
 			],
 		},
 		{
 			title: 'International Relations',
+			id: 'international',
 			expandable: true,
 			content: [
 				{
 					title: 'International Student Exchange',
 					content: null,
 					child: true,
+					href: '/international/exchange',
 				},
 				{
 					title: 'Students at Foreign Universities',
 					content: null,
 					child: true,
+					href: '/international/students',
 				},
 				{
 					title: 'International Visits',
 					content: null,
 					child: true,
+					href: '/international/visits',
 				},
 				{
 					title: 'International Speakers',
 					content: null,
 					child: true,
+					href: '/international/speakers',
 				},
 				{
 					title: "Student's Feedback",
 					content: null,
 					child: true,
+					href: '/international/student-feedback',
 				},
 				{
 					title: 'Gallery',
 					content: null,
 					child: true,
+					href: '/international/gallery',
 				},
 			],
 		},
@@ -219,8 +242,7 @@ export default function Navbar() {
 								key={index}
 								className='hidden md:block'
 							>
-								<a
-									href='#'
+								<div
 									className='px-4 py-2 text-lg font-semibold text-black hover:text-blue-500 relative flex gap-2'
 									onMouseEnter={() => {
 										document
@@ -242,7 +264,7 @@ export default function Navbar() {
 										/>
 									)}
 									<div
-										className='absolute hidden top-[3rem] drop-shadow-lg bg-white rounded-md'
+										className='absolute hidden top-[2rem] drop-shadow-lg bg-white rounded-md'
 										id={item.title}
 									>
 										{item.expandable && (
@@ -250,17 +272,17 @@ export default function Navbar() {
 												{item.content.map((subItem, index) => {
 													return (
 														<div
+															className='text-lg font-semibold text-black hover:text-blue-500 py-1 px-2'
 															key={index}
-															className='px-4 py-2 text-lg font-semibold text-black hover:text-blue-500'
 														>
-															{subItem.title}
+															<Link href={subItem.href}>{subItem.title}</Link>
 														</div>
 													);
 												})}
 											</div>
 										)}
 									</div>
-								</a>
+								</div>
 							</div>
 						);
 					})}

@@ -27,13 +27,11 @@ const Breadcrumbs = ({
 					let href = `/${pathNames.slice(0, index + 1).join('/')}`;
 					let itemClasses =
 						paths === href ? `${listClasses} ${activeClasses}` : listClasses;
-					let itemLink = capitalizeLinks
-						? link[0].toUpperCase() + link.slice(1, link.length)
-						: link;
+					let itemLink = capitalizeLinks ? link.toUpperCase() : link;
 					return (
 						<React.Fragment key={index}>
 							<li className={itemClasses}>
-								<Link href={href}>{itemLink}</Link>
+								<Link href={href}>{itemLink.replace('-', ' ')}</Link>
 							</li>
 							{pathNames.length !== index + 1 && separator}
 						</React.Fragment>
