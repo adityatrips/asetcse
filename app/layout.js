@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={nunitoSans.className}>
-				<Navbar />
+				
 				{children}
 			</body>
 		</html>
