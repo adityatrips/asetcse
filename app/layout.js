@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
 					listClasses='hover:underline mx-2 font-bold text-xl'
 					capitalizeLinks
 				/>
+
 				{children}
 			</body>
 		</html>

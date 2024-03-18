@@ -4,7 +4,8 @@ import Image from 'next/image';
 
 export default function HomePage() {
 	return (
-		<div className='z-0'>
+		<>
+		<Navbar /><div className='z-0'>
 			<Image
 				alt='Amity Campus'
 				height='auto'
@@ -225,5 +226,7 @@ export default function HomePage() {
 				</div>
 			</div>
 		</div>
+		</>
+		
 	);
 }
