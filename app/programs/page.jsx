@@ -1,3 +1,7 @@
+'use client';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import NextBreadcrumb from '@/components/Breadcrumbs';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 let ugPrograms = [
@@ -66,9 +70,17 @@ let pgPrograms = [
 	},
 ];
 
-export default function page() {
+const Programs = () => {
 	return (
 		<div className='px-5 pb-10'>
+			<Breadcrumbs
+				homeElement='Home'
+				separator={<span className='text-xl select-none'> / </span>}
+				activeClasses={'text-amber font-bold text-xl'}
+				containerClasses={'flex py-5'}
+				listClasses='hover:underline mx-2 font-bold text-xl'
+				capitalizeLinks
+			/>
 			<h1 className='title'>Graduate Programmes</h1>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 				{ugPrograms.map((program, index) => {
@@ -129,4 +141,6 @@ export default function page() {
 			</div>
 		</div>
 	);
-}
+};
+
+export default Programs;
