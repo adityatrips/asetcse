@@ -75,7 +75,7 @@ export default function page() {
 					return (
 						<div
 							key={index}
-							className='border p-4 rounded-lg shadow-md bg-white'
+							className='border p-10 rounded-lg shadow-md bg-white'
 						>
 							<h1 className='uppercase font-bold text-xl'>{program.name}</h1>
 							<p className='text-[#777]'>
@@ -104,7 +104,7 @@ export default function page() {
 					return (
 						<div
 							key={index}
-							className='border p-4 rounded-lg shadow-md bg-white'
+							className='border p-10 rounded-lg shadow-md bg-white'
 						>
 							<h1 className='uppercase font-bold text-xl'>{program.name}</h1>
 							<p className='text-[#777]'>
