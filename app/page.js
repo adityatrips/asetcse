@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './componsents/shared/Navbar';
+import Navbar from '@/components/shared/Navbar';
 import Image from 'next/image';
 
 export default function HomePage() {

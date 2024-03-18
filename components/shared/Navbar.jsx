@@ -200,7 +200,7 @@ export default function Navbar() {
 					<Image
 						height={50}
 						width={50}
-						src={require('../../../images/icons/menu.svg')}
+						src={require('../../images/icons/menu.svg')}
 						alt='Menu'
 						className='md:hidden fixed w-[10vh] p-5 top-[2.5vh] left-[2.5vh] cursor-pointer z-30 bg-white drop-shadow-2xl'
 						onClick={toggleSidebar}
