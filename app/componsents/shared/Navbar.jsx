@@ -208,7 +208,6 @@ export default function Navbar() {
 					<Image
 						src={require('@/images/auup-logo.png')}
 						alt='Amity University Uttar Pradesh'
-						objectFit='contain'
 						quality={100}
 						className='h-[10vh] w-[auto]'
 					/>
@@ -280,7 +279,6 @@ export default function Navbar() {
 				<div className='absolute hidden md:block bottom-0 left-0 m-[2%] w-[96%] h-[50px] bg-white'>
 					<Image
 						alt='AUUP Logo'
-						fill
 						src={require('@/images/logo.png')}
 					/>
 				</div>
