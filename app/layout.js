@@ -1,7 +1,7 @@
 import { Nunito_Sans, Noto_Sans_Symbols } from 'next/font/google';
 import './globals.css';
 import Navbar from '../components/shared/Navbar';
-import Breadcrumbs from '../components/Breadcrumbs';
+import Footer from '../components/shared/Footer';
 
 const nunitoSans = Nunito_Sans({ subsets: ['latin'] });
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
 			<body className={nunitoSans.className}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

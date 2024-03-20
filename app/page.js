@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Navbar from '../components/shared/Navbar';
 
 export default function HomePage() {
 	return (
@@ -46,45 +47,45 @@ export default function HomePage() {
 				</div>
 
 				<div className='px-5 py-10'>
-					<h1 className='title'>HOI&apos;S Message</h1>
+					<h1 className='title'>HOD&apos;S Message</h1>
 
 					<blockquote className='m-10 md:m-20'>
 						<div className='z-10'>
 							<p className='text-gray-800 font-medium'>
 								<em>
-									Amity School of Engineering and Technology aim to develop
-									globally adaptable professionals with social sensitivity. The
-									institute is all set to bring out the potential within each
-									student and provide proper guidance so that their potentials
-									can be utilized to make them future engineers capable of
-									meeting any challenge that will be faced by them after leaving
-									the university. The university provides full support to
-									improve their communication skills, critical thinking
-									abilities, moral values and sense of responsibility. All
-									efforts are made to improve the creativity and problem solving
-									abilities of the students so that they can contribute their
-									best to the society and the country. Today we are all
-									witnessing the impact of globalization and liberalization. It
-									is true that the technological transformation has impacted all
-									our lives. In this era of globalization and liberalization
-									there are lot many challenges. As an academic institute it is
-									necessary to address these challenges. At institute level we
-									are constantly taking efforts to ensure that our students will
-									showcase their academic talent with high moral values. Our
-									students being Engineers will contribute and for sure will
-									keep Social Commitment. Faculty-members guide and monitor
-									students by participating in their academic, research, sports
-									&amp; cultural pursuits. We want our students to be committed,
-									dedicated to their goals along with integrity and concern for
-									the environment and rural society they live in. We rely on a
-									pedagogy that promotes creativity and innovation and
-									teaching-learning practices of high standards. Creativity
-									flourishes in an atmosphere that is free, friendly and above
-									all, democratic and participatory in nature. Every course is
-									designed, delivered and monitored in a manner that will add a
-									significant value to a student. We equally emphasize on the
-									development of core human values, mental well-being and
-									physical well-being of our students.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aperiam, vero magni nihil officiis labore eius alias
+									dignissimos quasi consequatur corporis quod commodi hic
+									aspernatur voluptate? Aperiam, alias odio unde dignissimos
+									maxime debitis quod. Possimus quod dolore dolor! Culpa optio
+									libero porro esse dolorum, dolor saepe! Inventore cum,
+									obcaecati odio temporibus voluptatem laboriosam iste libero
+									repudiandae ab at, quis doloremque similique quidem illo
+									voluptatibus quia error incidunt assumenda modi commodi
+									asperiores. At suscipit quisquam quod doloremque ratione totam
+									explicabo dolor quam ea perferendis! Eligendi vero minus magni
+									quidem facilis veritatis ea deserunt dolor numquam minima
+									voluptate blanditiis iure est, quo ducimus aspernatur corporis
+									porro, aliquam sunt unde distinctio harum neque. Nihil,
+									explicabo molestias! Porro autem provident architecto, qui
+									sapiente dolorem reiciendis laudantium quisquam alias. Nulla
+									dolores harum dicta autem, mollitia odit sint tempora
+									accusamus. Ut quas, ipsa et nobis quisquam voluptatibus
+									voluptatum, cum, in dicta libero sint? Nihil iusto, earum
+									rerum adipisci quisquam ex ipsam necessitatibus nobis
+									excepturi voluptatem sapiente vel assumenda voluptate magni
+									eum? Ipsum provident ad vero molestias sed nemo fugit
+									consequuntur doloribus sint consectetur. Doloremque, nostrum
+									consectetur odit ipsam architecto iusto maiores ea et
+									explicabo? Dolorem unde ex, corporis modi accusantium beatae
+									quo iste soluta laborum. Dolores dolorum nemo voluptatibus
+									animi odio, exercitationem eligendi reiciendis repellendus,
+									inventore quis recusandae provident quaerat saepe hic quos
+									voluptas at eveniet minus nulla? Facere excepturi, ipsa quis
+									explicabo dicta deleniti dolorum quod accusamus quisquam quas,
+									nobis perspiciatis ullam omnis repellendus odio aliquid ea
+									voluptates repudiandae eius nisi, recusandae accusantium?
+									Iste, saepe vel!
 								</em>
 							</p>
 						</div>

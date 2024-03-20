@@ -1,20 +1,21 @@
 import Image from 'next/image';
-import AmityLogo from '../../images/logo.png';
+import AmityLogo from '../../images/auup-logo.png';
 import AmityCampus from '../../images/Amity-campus.jpg';
 import CardX from './card.jsx';
+import Link from 'next/link';
 
 export default function Programmes() {
 	return (
 		<>
 			<div class='relative h-[35rem] w-full'>
 				<div class='h-[7rem] flex justify-center items-center w-full  absolute z-[25] px-20'>
-					<a href='index.html'>
+					<Link href='/'>
 						<Image
 							alt='Amity University Uttar Pradesh'
 							src={AmityLogo}
 							className='mt-2 w-64 sm:w-96'
 						/>
-					</a>
+					</Link>
 				</div>
 				<Image
 					alt='Amity University Uttar Pradesh'
@@ -42,7 +43,7 @@ export default function Programmes() {
 			</ol>
 
 			<div class='flex items-center h-12 sm:h-16 m-2 sm:m-5 justify-center'>
-				<div class=' text-3xl md:text-5xl font-bold text-center'>
+				<div class='title text-3xl md:text-5xl font-bold text-center'>
 					Graduate Programmes
 				</div>
 			</div>
@@ -92,7 +93,7 @@ export default function Programmes() {
 			</div>
 
 			<div class='flex items-center h-12 sm:h-16 m-2 sm:m-5 justify-center'>
-				<div class=' text-3xl md:text-5xl font-bold text-center'>
+				<div class='title text-3xl md:text-5xl font-bold text-center'>
 					Post Graduate Programmes
 				</div>
 			</div>
