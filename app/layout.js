@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={nunitoSans.className}>
+			<body className={nunitoSans.className + " min-h-[100vh]"}>
 				<Navbar />
 				{children}
 				<Footer />

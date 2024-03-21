@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Navbar from '../components/shared/Navbar';
 
 export default function HomePage() {
 	return (
@@ -10,7 +9,7 @@ export default function HomePage() {
 					alt='Amity Campus'
 					height='auto'
 					widht='auto'
-					className='h-[auto] max-h-[75vh] object-cover w-[100%]'
+					className='h-[26rem] object-cover w-full'
 					src={JSON.parse(
 						JSON.stringify(require('../images/Amity-campus.jpg'))
 					)}
