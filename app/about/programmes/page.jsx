@@ -75,8 +75,8 @@ const Programs = () => {
 	return (
 		<React.Fragment>
 			<div className='px-5 py-10'>
-				<h1 className='title'>Graduate Programmes</h1>
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+				<h1 className='title'>Under-Graduate Programmes</h1>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
 					{ugPrograms.map((program, index) => {
 						return (
 							<Link
@@ -85,29 +85,16 @@ const Programs = () => {
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
-									<div class='flex justify-between items-center'>
+									<div class='flex justify-between items-center gap-2'>
 										<div>
 											<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
 												{program.name}
 											</h3>
-											<p class='text-sm text-gray-500'>
+											<p class='text-sm text-gray-500 mt-2'>
 												<span className='font-bold'>
 													Duration of the course:
 												</span>
 												&nbsp;{program.duration}
-											</p>
-											<p class='text-sm text-gray-500'>
-												<span className='font-bold'>
-													Annual fee for non-sponsored students:
-												</span>
-												&nbsp;
-												{program.nonSponsored}
-											</p>
-											<p class='text-sm text-gray-500'>
-												<span className='font-bold'>
-													Annual fee for sponsored students:
-												</span>
-												&nbsp;{program.sponsored}
 											</p>
 										</div>
 										<div class='ps-3'>
@@ -133,7 +120,7 @@ const Programs = () => {
 					})}
 				</div>
 				<h1 className='title pt-10'>Post-Graduate Programmes</h1>
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
 					{pgPrograms.map((program, index) => {
 						return (
 							<Link
@@ -147,24 +134,11 @@ const Programs = () => {
 											<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
 												{program.name}
 											</h3>
-											<p class='text-sm text-gray-500'>
+											<p class='text-sm text-gray-500 mt-2'>
 												<span className='font-bold'>
 													Duration of the course:
 												</span>
 												&nbsp;{program.duration}
-											</p>
-											<p class='text-sm text-gray-500'>
-												<span className='font-bold'>
-													Annual fee for non-sponsored students:
-												</span>
-												&nbsp;
-												{program.nonSponsored}
-											</p>
-											<p class='text-sm text-gray-500'>
-												<span className='font-bold'>
-													Annual fee for sponsored students:
-												</span>
-												&nbsp;{program.sponsored}
 											</p>
 										</div>
 										<div class='ps-3'>

@@ -223,7 +223,7 @@ export default function Navbar() {
 				{/* NAVBAR  */}
 
 				<nav>
-					<div className='h-[15vh] flex justify-center items-center z-30'>
+					<div className='h-[7rem] flex justify-center items-center z-30'>
 						<Image
 							height={50}
 							width={50}
@@ -236,10 +236,10 @@ export default function Navbar() {
 							src={require('../../images/auup-logo.png')}
 							alt='Amity University Uttar Pradesh'
 							quality={100}
-							className='h-[10vh] w-[auto]'
+							className='w-64 sm:w-96'
 						/>
 					</div>
-					<div className='flex justify-center items-center md:py-10'>
+					<div className='flex justify-center items-center md:py-2'>
 						{accordionData.map((item, index) => {
 							return (
 								<div
@@ -321,11 +321,11 @@ export default function Navbar() {
 					JSON.stringify(require('../../images/Amity-campus.jpg'))
 				)}
 				alt='Amity University Uttar Pradesh'
-				className='max-h-[35rem]  w-full object-cover'
+				className='max-h-[25rem] w-full object-cover'
 			/>
 			<Link
 				href='/'
-				className='absolute top-[3rem] max-w-96 w-64 sm:w-96'
+				className='absolute top-[1rem] max-w-96 w-64 sm:w-96'
 			>
 				<Image
 					src={JSON.parse(
