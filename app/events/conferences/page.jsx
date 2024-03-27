@@ -24,7 +24,7 @@ const page = () => {
               <p class="mt-1 text-md text-gray-600 dark:text-gray-400 pr-2 sm:pr-10">
                 Department of Computer Science & Engineering, Amity School of Engineering and
                 Technology, Amity University Uttar Pradesh, Noida, organized the 14th International
-                Conference on Cloud Computing, Data Science and Engineering, "Confluence 2024",
+                Conference on Cloud Computing, Data Science and Engineering, &apos;Confluence 2024&apos;,
                 from 18
                 th
                 -19th January 2024.
