@@ -154,6 +154,7 @@ export default function HomePage() {
 							<div className='flex items-center'>
 								<div className='flex-shrink-0'>
 									<Image
+										loading='eager'
 										className='size-40 rounded-full'
 										src={mkpandey}
 										alt='Image Description'
