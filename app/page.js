@@ -1,5 +1,61 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+
+import mkpandey from '/images/mkpandey.jpeg';
+import amityCampus from '/images/amity-campus.jpg';
+import accenture from '/images/accenture.jpg';
+import britishGas from '/images/british-gas.jpg';
+import capegemini from '/images/capegemini.jpg';
+import csc from '/images/csc.jpg';
+import dell from '/images/dell.jpg';
+import flipkart from '/images/flipkart.jpg';
+import ibm from '/images/ibm.jpg';
+import icicic from '/images/icicic.jpg';
+import igate from '/images/igate.jpg';
+import indianNavy from '/images/indian-navy.jpg';
+import indianoil from '/images/indianoil.jpg';
+import microsoft from '/images/microsoft.jpg';
+import tata from '/images/tata.jpg';
+import unilibwe from '/images/unilibwe.jpg';
+import videocon from '/images/videocon.jpg';
+import wipro from '/images/wipro.svg';
+
+const imgs = [
+	{
+		name: 'accenture',
+		img: accenture,
+	},
+	{ name: 'britishGas', img: britishGas },
+	{
+		name: 'capegemini',
+		img: capegemini,
+	},
+	{ name: 'csc', img: csc },
+	{ name: 'dell', img: dell },
+	{ name: 'flipkart', img: flipkart },
+	{ name: 'ibm', img: ibm },
+	{ name: 'icicic', img: icicic },
+	{ name: 'igate', img: igate },
+	{ name: 'navy', img: indianNavy },
+	{
+		name: 'indianoil',
+		img: indianoil,
+	},
+	{
+		name: 'microsoft',
+		img: microsoft,
+	},
+	{ name: 'tata', img: tata },
+	{ name: 'unilibwe', img: unilibwe },
+	{ name: 'videocon', img: videocon },
+	{ name: 'wipro', img: wipro },
+];
 
 export default function HomePage() {
 	return (
@@ -7,12 +63,10 @@ export default function HomePage() {
 			<div className='z-0'>
 				<Image
 					alt='Amity Campus'
-					height='auto'
-					widht='auto'
+					height={845}
+					widht={1539}
 					className='h-[26rem] object-cover w-full'
-					src={JSON.parse(
-						JSON.stringify(require('../images/Amity-campus.jpg'))
-					)}
+					src={amityCampus}
 				/>
 
 				<h1 className='title-bg text-center uppercase text-white font-extrabold text-2xl py-2'>
@@ -50,54 +104,61 @@ export default function HomePage() {
 
 					<blockquote className='m-10 md:m-20'>
 						<div className='z-10'>
-							<p className='text-gray-800 font-medium'>
-								<em>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Aperiam, vero magni nihil officiis labore eius alias
-									dignissimos quasi consequatur corporis quod commodi hic
-									aspernatur voluptate? Aperiam, alias odio unde dignissimos
-									maxime debitis quod. Possimus quod dolore dolor! Culpa optio
-									libero porro esse dolorum, dolor saepe! Inventore cum,
-									obcaecati odio temporibus voluptatem laboriosam iste libero
-									repudiandae ab at, quis doloremque similique quidem illo
-									voluptatibus quia error incidunt assumenda modi commodi
-									asperiores. At suscipit quisquam quod doloremque ratione totam
-									explicabo dolor quam ea perferendis! Eligendi vero minus magni
-									quidem facilis veritatis ea deserunt dolor numquam minima
-									voluptate blanditiis iure est, quo ducimus aspernatur corporis
-									porro, aliquam sunt unde distinctio harum neque. Nihil,
-									explicabo molestias! Porro autem provident architecto, qui
-									sapiente dolorem reiciendis laudantium quisquam alias. Nulla
-									dolores harum dicta autem, mollitia odit sint tempora
-									accusamus. Ut quas, ipsa et nobis quisquam voluptatibus
-									voluptatum, cum, in dicta libero sint? Nihil iusto, earum
-									rerum adipisci quisquam ex ipsam necessitatibus nobis
-									excepturi voluptatem sapiente vel assumenda voluptate magni
-									eum? Ipsum provident ad vero molestias sed nemo fugit
-									consequuntur doloribus sint consectetur. Doloremque, nostrum
-									consectetur odit ipsam architecto iusto maiores ea et
-									explicabo? Dolorem unde ex, corporis modi accusantium beatae
-									quo iste soluta laborum. Dolores dolorum nemo voluptatibus
-									animi odio, exercitationem eligendi reiciendis repellendus,
-									inventore quis recusandae provident quaerat saepe hic quos
-									voluptas at eveniet minus nulla? Facere excepturi, ipsa quis
-									explicabo dicta deleniti dolorum quod accusamus quisquam quas,
-									nobis perspiciatis ullam omnis repellendus odio aliquid ea
-									voluptates repudiandae eius nisi, recusandae accusantium?
-									Iste, saepe vel!
-								</em>
-							</p>
+							<em className='text-gray-800'>
+								<p>
+									Amity School of Engineering and Technology aim to develop
+									globally adaptable professionals with social sensitivity. The
+									institute is all set to bring out the potential within each
+									student and provide proper guidance so that their potentials
+									can be utilized to make them future engineers capable of
+									meeting any challenge that will be faced by them after leaving
+									the university. The university provides full support to
+									improve their communication skills, critical thinking
+									abilities, moral values and sense of responsibility.
+								</p>
+								<p>
+									All efforts are made to improve the creativity and problem
+									solving abilities of the students so that they can contribute
+									their best to the society and the country.
+								</p>
+								<p>
+									Today we are all witnessing the impact of globalization and
+									liberalization. It is true that the technological
+									transformation has impacted all our lives. In this era of
+									globalization and liberalization there are lot many
+									challenges. As an academic institute it is necessary to
+									address these challenges. At institute level we are constantly
+									taking efforts to ensure that our students will showcase their
+									academic talent with high moral values. Our students being
+									Engineers will contribute and for sure will keep Social
+									Commitment. Faculty-members guide and monitor students by
+									participating in their academic, research, sports & cultural
+									pursuits. We want our students to be committed, dedicated to
+									their goals along with integrity and concern for the
+									environment and rural society they live in.
+								</p>
+								<p>
+									We rely on a pedagogy that promotes creativity and innovation
+									and teaching-learning practices of high standards. Creativity
+									flourishes in an atmosphere that is free, friendly and above
+									all, democratic and participatory in nature. Every course is
+									designed, delivered and monitored in a manner that will add a
+									significant value to a student. We equally emphasize on the
+									development of core human values, mental well-being and
+									physical well-being of our students.
+								</p>
+							</em>
 						</div>
 
 						<footer className='mt-12'>
 							<div className='flex items-center'>
 								<div className='flex-shrink-0'>
 									<Image
-										className='size-20 rounded-full'
-										src={JSON.parse(
-											JSON.stringify(require('../images/mkpandey.jpeg'))
-										)}
+										className='size-40 rounded-full'
+										src={mkpandey}
 										alt='Image Description'
+										width={500}
+										height={500}
 									/>
 								</div>
 								<div className='ms-4'>
@@ -115,128 +176,31 @@ export default function HomePage() {
 
 				<div className='px-5 py-10'>
 					<h1 className='title'>Placement Partners</h1>
-					<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
-						<div className='flex justify-center items-center'>
+					<Slider
+						dots
+						infinite
+						autoplay={true}
+						autoplaySpeed={2000}
+						slidesToScroll={1}
+						slidesToShow={3}
+						swipeToSlide
+						touchMove
+						centerMode
+						pauseOnFocus={false}
+						pauseOnHover={false}
+					>
+						{imgs.map((img, i) => (
 							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/accenture.jpg'))
-								)}
-								alt='accenture'
+								quality={100}
+								key={i}
+								className='object-contain aspect-square w-[33vw] h-full p-5'
+								src={img.img}
+								alt={img.name}
+								width={300}
+								height={300}
 							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/british-gas.jpg'))
-								)}
-								alt='british-gas'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/capegemini.jpg'))
-								)}
-								alt='capegemini'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(JSON.stringify(require('../images/csc.jpg')))}
-								alt='csc'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(JSON.stringify(require('../images/dell.jpg')))}
-								alt='dell'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/flipkart.jpg'))
-								)}
-								alt='flipkart'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(JSON.stringify(require('../images/ibm.jpg')))}
-								alt='ibm'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/icicic.jpg'))
-								)}
-								alt='icicic'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(JSON.stringify(require('../images/igate.jpg')))}
-								alt='igate'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/indian-navy.jpg'))
-								)}
-								alt='indian-navy'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/indianoil.jpg'))
-								)}
-								alt='indianoil'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/microsoft.jpg'))
-								)}
-								alt='microsoft'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(JSON.stringify(require('../images/tata.jpg')))}
-								alt='tata'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/unilibwe.jpg'))
-								)}
-								alt='unilibwe'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(require('../images/videocon.jpg'))
-								)}
-								alt='videocon'
-							/>
-						</div>
-						<div className='flex justify-center items-center'>
-							<Image
-								src={JSON.parse(
-									JSON.stringify(
-										JSON.parse(JSON.stringify(require('../images/wipro.jpg')))
-									)
-								)}
-								alt='wipro'
-							/>
-						</div>
-					</div>
+						))}
+					</Slider>
 				</div>
 			</div>
 		</>

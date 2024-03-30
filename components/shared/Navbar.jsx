@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Accordion from './Accordion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -12,8 +12,6 @@ import auupLogo from '/images/auup-logo.png';
 import logo from '/images/logo.png';
 
 export default function Navbar() {
-	const pathname = usePathname();
-
 	let accordionData = [
 		{
 			title: 'About',
@@ -102,7 +100,7 @@ export default function Navbar() {
 			expandable: true,
 			content: [
 				{
-					title: 'Publications/Patents/Projects',
+					title: 'Publications / Patents / Projects',
 					content: null,
 					child: true,
 					href: '/innovations/publications',
@@ -215,6 +213,28 @@ export default function Navbar() {
 	const toggleSidebar = () => {
 		setExpanded((prev) => !prev);
 	};
+
+	const [navHeight, setNavHeight] = React.useState('0');
+	const navRef = React.useRef(null);
+
+	useEffect(() => {
+		if (!navRef.current) {
+			return;
+		}
+
+		const resizeObserver = new ResizeObserver(() => {
+			if (navRef.current.offsetHeight !== navHeight) {
+				setNavHeight(`${navRef.current.offsetHeight}`);
+				console.log(`${navRef.current.offsetHeight}`);
+			}
+		});
+
+		resizeObserver.observe(navRef.current);
+
+		return function cleanup() {
+			resizeObserver.disconnect();
+		};
+	}, [navHeight]);
 
 	return (
 		<React.Fragment>
