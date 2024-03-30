@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 import mkpandey from '/images/mkpandey.jpeg';
-import amityCampus from '/images/amity-campus.jpg';
+import amityCampus from '/images/Amity-campus.jpg';
 import accenture from '/images/accenture.jpg';
 import britishGas from '/images/british-gas.jpg';
 import capegemini from '/images/capegemini.jpg';
