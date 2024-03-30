@@ -46,7 +46,7 @@ export default function HomePage() {
 				</div>
 
 				<div className='px-5 py-10'>
-					<h1 className='title'>HOD&apos;S Message</h1>
+					<h1 className='title'>HOI&apos;S Message</h1>
 
 					<blockquote className='m-10 md:m-20'>
 						<div className='z-10'>

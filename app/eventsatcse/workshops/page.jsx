@@ -1,25 +1,25 @@
 import Image from 'next/image';
-import x1 from '../../../images/workshop/1.jpeg';
-import x2 from '../../../images/workshop/2.jpeg';
-import x3 from '../../../images/workshop/3.png';
-import x4 from '../../../images/workshop/4.png';
-import x5 from '../../../images/workshop/5.png';
-import x6 from '../../../images/workshop/6.png';
-import x7 from '../../../images/workshop/7.png';
-import x8 from '../../../images/workshop/8.png';
-import x9 from '../../../images/workshop/9.png';
-import x10 from '../../../images/workshop/10.png';
-import x11 from '../../../images/workshop/11.png';
-import x12 from '../../../images/workshop/12.png';
-import x13 from '../../../images/workshop/13.png';
-import x14 from '../../../images/workshop/14.png';
-import x15 from '../../../images/workshop/15.png';
-import x16 from '../../../images/workshop/16.png';
-import x17 from '../../../images/workshop/17.png';
-import x18 from '../../../images/workshop/18.jpeg';
-import x19 from '../../../images/workshop/19.jpeg';
-import x20 from '../../../images/workshop/20.jpeg';
-import x21 from '../../../images/workshop/21.jpeg';
+import x1 from '/images/workshop/1.jpeg';
+import x2 from '/images/workshop/2.jpeg';
+import x3 from '/images/workshop/3.png';
+import x4 from '/images/workshop/4.png';
+import x5 from '/images/workshop/5.png';
+import x6 from '/images/workshop/6.png';
+import x7 from '/images/workshop/7.png';
+import x8 from '/images/workshop/8.png';
+import x9 from '/images/workshop/9.png';
+import x10 from '/images/workshop/10.png';
+import x11 from '/images/workshop/11.png';
+import x12 from '/images/workshop/12.png';
+import x13 from '/images/workshop/13.png';
+import x14 from '/images/workshop/14.png';
+import x15 from '/images/workshop/15.png';
+import x16 from '/images/workshop/16.png';
+// import x17 from '/images/workshop/17.png';
+// import x18 from '/images/workshop/18.jpeg';
+// import x19 from '/images/workshop/19.jpeg';
+// import x20 from '/images/workshop/20.jpeg';
+// import x21 from '/images/workshop/21.jpeg';
 
 export default function Workshop() {
 	return (

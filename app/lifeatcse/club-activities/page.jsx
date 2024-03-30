@@ -8,47 +8,43 @@ const clubs = [
 		name: 'ALIAS',
 		id: 'alias',
 		pdf: 'https://drive.google.com/uc?export=download&id=1eNWd8kaAw4kafir7bnP30cVdZJa4CosD',
-		img: require('../../../images/clubs/ALIAS.jpg'),
+		img: require('/images/clubs/ALIAS.jpg'),
 	},
 	{
 		name: 'Cloud Security Club',
 		id: 'csc',
 		pdf: 'https://drive.google.com/uc?export=download&id=1HyEl2h8OCWi8Xu47EwZkFh8fy9pCSwVJ',
-		img: JSON.parse(
-			JSON.stringify(require('../../../images/clubs/CLOUD_SEC.jpg'))
-		),
+		img: JSON.parse(JSON.stringify(require('/images/clubs/CLOUD_SEC.jpg'))),
 	},
 	{
 		name: 'Aritificial Intelligence Club',
 		id: 'aic',
 		pdf: 'https://drive.google.com/uc?export=download&id=1dFW6EoePMClcYRGB-BzHOK-VAf6hfLhW',
-		img: require('../../../images/clubs/AI.jpg'),
+		img: require('/images/clubs/AI.jpg'),
 	},
 	{
 		name: 'Data Science Club',
 		id: 'dsc',
 		pdf: 'https://drive.google.com/uc?export=download&id=1DWbWOYzpw_nSkR7w6_2LnsA16sgolX72',
-		img: require('../../../images/clubs/DS.jpg'),
+		img: require('/images/clubs/DS.jpg'),
 	},
 	{
 		name: 'Software Engineering Club',
 		id: 'sec',
 		pdf: 'https://drive.google.com/uc?export=download&id=1DRuc_TIEAmEbtxdLrD9Xdn9k3T0gTLoX',
-		img: require('../../../images/clubs/SE.jpg'),
+		img: require('/images/clubs/SE.jpg'),
 	},
 	{
 		name: 'Virtual Reality & Game Development',
 		id: 'vrgd',
 		pdf: 'https://drive.google.com/uc?export=download&id=1_l8S_mrZNYshOBGUanBpThA92iyZOXKf',
-		img: require('../../../images/clubs/VRGD.jpeg'),
+		img: require('/images/clubs/VRGD.jpeg'),
 	},
 	{
 		name: 'Cyber Security Club',
 		id: 'cysc',
 		pdf: 'https://drive.google.com/uc?export=download&id=1i8WvDLOIgvo7vMcyMLuTgMLaatf-AuZg',
-		img: JSON.parse(
-			JSON.stringify(require('../../../images/clubs/CYBER_SEC.png'))
-		),
+		img: JSON.parse(JSON.stringify(require('/images/clubs/CYBER_SEC.png'))),
 	},
 ];
 
