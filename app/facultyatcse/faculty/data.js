@@ -98,13 +98,6 @@ export const data = [
 		img: 'seemaSVNSharma',
 	},
 	{
-		author: 'Nidhi Chandra',
-		scopus: '55201425700',
-		orcid: '0000-0001-9312-5854',
-		inst: 'ASET-N',
-		img: '',
-	},
-	{
 		author: 'Paurush Bhulania',
 		scopus: '56901230500',
 		orcid: 'nan',
@@ -196,13 +189,6 @@ export const data = [
 		img: 'achyutShankar',
 	},
 	{
-		author: 'Saurabh Agarwal',
-		scopus: '57190606444',
-		orcid: '0000-0003-3836-2595',
-		inst: 'ASET-N',
-		img: '',
-	},
-	{
 		author: 'Shuchi Mala',
 		scopus: '57194570398',
 		orcid: '0000-0001-6222-4016',
@@ -216,13 +202,13 @@ export const data = [
 		inst: 'ASET-N',
 		img: 'sunilKumar',
 	},
-	{
-		author: 'Sumit Kumar',
-		scopus: '57215077928',
-		orcid: '0000-0002-0205-8412',
-		inst: 'ASET-N',
-		img: 'sumitKumar',
-	},
+	// {
+	// 	author: 'Sumit Kumar',
+	// 	scopus: '57215077928',
+	// 	orcid: '0000-0002-0205-8412',
+	// 	inst: 'ASET-N',
+	// 	img: 'sumitKumar',
+	// },
 	{
 		author: 'Sweta Srivastava',
 		scopus: '57208812920',
@@ -243,13 +229,6 @@ export const data = [
 		orcid: '0000-0001-5068-4146',
 		inst: 'ASET-N',
 		img: 'supriyaRaheja',
-	},
-	{
-		author: 'Madhulika Bhadauria',
-		scopus: '57254038300',
-		orcid: 'nan',
-		inst: 'ASET-N',
-		img: '',
 	},
 	{
 		author: 'Sumita Gupta',
@@ -284,7 +263,7 @@ export const data = [
 		scopus: '57195277608',
 		orcid: 'nan',
 		inst: 'ASET-N',
-		img: '',
+		img: 'aakanshiGupta',
 	},
 	{
 		author: 'Rashmi Gandhi',
@@ -292,13 +271,6 @@ export const data = [
 		orcid: 'nan',
 		inst: 'ASET-N',
 		img: 'rashmiGandhi',
-	},
-	{
-		author: 'Ashok Kumar Yadav',
-		scopus: '57202596731',
-		orcid: '0000-0003-1054-4442',
-		inst: 'ASET-N',
-		img: 'ashokYadav',
 	},
 	{
 		author: 'Nidhi Mishra',
@@ -311,13 +283,6 @@ export const data = [
 		author: 'Krishna Kant Singh',
 		scopus: '55265360800',
 		orcid: '0000-0002-6510-6768',
-		inst: 'ASET-N',
-		img: '',
-	},
-	{
-		author: 'Juhi Jain',
-		scopus: '57207990516',
-		orcid: 'nan',
 		inst: 'ASET-N',
 		img: '',
 	},

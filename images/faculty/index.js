@@ -1,7 +1,6 @@
 import abhishekSinghal from './abhishekSinghal.jpg';
 import achyutShankar from './achyutShankar.jpeg';
 import anshulKTickoo from './anshulKTickoo.jpg';
-import ashokYadav from './ashokYadav.png';
 import kunalGupta from './kunalGupta.jpg';
 import mishaKakkar from './mishaKakkar.jpg';
 import nehaAgarwal from './nehaAgarwal.jpg';
@@ -32,7 +31,6 @@ import paurushBhulaniya from './paurushBhulaniya.jpeg';
 import bhupendraSingh from './bhupendraSingh.jpeg';
 import anantJayswal from './anantJayswal.jpeg';
 import rakeshGarg from './rakeshGarg.jpeg';
-import sumitKumar from './sumitKumar.jpeg';
 import geetikaMunjal from './geetikaMunjal.jpeg';
 import sumitaGupta from './sumitaGupta.jpeg';
 import dollySharma from './dollySharma.jpeg';
@@ -42,14 +40,15 @@ import sachinMinocha from './sachinMinocha.jpeg';
 import aditiBhardwaj from './aditiBhardwaj.jpeg';
 import deepakGaur from './deepakGaur.jpeg';
 import puneetSharma from './puneetSharma.png';
+import aakanshiGupta from './aakanshiGupta.jpg';
 
 export const data = {
 	abhishekSinghal,
+	aakanshiGupta,
 	puneetSharma,
 	aditiBhardwaj,
 	achyutShankar,
 	anshulKTickoo,
-	ashokYadav,
 	kunalGupta,
 	mishaKakkar,
 	nehaAgarwal,
@@ -80,7 +79,6 @@ export const data = {
 	bhupendraSingh,
 	anantJayswal,
 	rakeshGarg,
-	sumitKumar,
 	geetikaMunjal,
 	sumitaGupta,
 	dollySharma,
