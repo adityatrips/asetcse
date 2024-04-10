@@ -11,7 +11,7 @@ const AlumniMessage = () => {
 			{data.map((item, i) => (
 				<div
 					key={i}
-					className='card w-full bg-base-100 shadow-md hover:shadow-xl transition-shadow'
+					className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
 				>
 					<div className='card-body'>
 						<p>{item.feedback}</p>

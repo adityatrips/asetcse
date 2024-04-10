@@ -1,15 +1,31 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
 	return (
 		<footer className='footer p-10 bg-secondary text-white'>
 			<nav>
 				<h6 className='footer-title'>Quick Links</h6>
-				<a className='link link-hover'>Programmes</a>
-				<a className='link link-hover'>Life@CSE</a>
-				<a className='link link-hover'>International Collaborations</a>
+				<Link
+					href='/'
+					className='link link-hover'
+				>
+					Home
+				</Link>
+				<Link
+					href='/about/programmes'
+					className='link link-hover'
+				>
+					Programmes
+				</Link>
+				<Link
+					href='/innovations/patents-publications'
+					className='link link-hover'
+				>
+					Publications
+				</Link>
 			</nav>
 			<nav>
 				<h6 className='footer-title'>Admissions</h6>

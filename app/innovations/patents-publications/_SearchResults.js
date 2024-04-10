@@ -71,30 +71,32 @@ const SearchResults = () => {
 				<span className='pl-5'>By author</span>
 			</label>
 
-			{data.map((item, idx) => (
-				<div
-					key={idx}
-					className='card w-[100%] bg-base-100 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out'
-				>
-					<div className='card-body'>
-						<h2 className='card-title'>{item.title}</h2>
-						<p>{item.authors}</p>
-						<p>{item.sourceTitle}</p>
-						<p>
-							{item.documentType} by {item.publisher}
-						</p>
-						<div className='card-actions justify-end'>
-							<Link
-								href={item.link}
-								target='_blank'
-								className='btn btn-primary'
-							>
-								Read
-							</Link>
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+				{data.map((item, idx) => (
+					<div
+						key={idx}
+						className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
+					>
+						<div className='card-body'>
+							<h2 className='card-title'>{item.title}</h2>
+							<p>{item.authors}</p>
+							<p>{item.sourceTitle}</p>
+							<p>
+								{item.documentType} by {item.publisher}
+							</p>
+							<div className='card-actions justify-end'>
+								<Link
+									href={item.link}
+									target='_blank'
+									className='btn btn-primary'
+								>
+									Read
+								</Link>
+							</div>
 						</div>
 					</div>
-				</div>
-			))}
+				))}
+			</div>
 		</div>
 	);
 };

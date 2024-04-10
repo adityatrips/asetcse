@@ -81,17 +81,17 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-xl transition'
+								class='group flex flex-col bg-secondary shadow-md rounded-xl hover:shadow-xl transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center gap-2'>
 										<div>
-											<h3 class='font-extrabold text-xl text-gray-800'>
+											<h3 class='font-extrabold text-xl text-primary'>
 												{program.name}
 											</h3>
-											<p class='text-sm text-gray-500 mt-2'>
-												<span className='font-bold'>
+											<p class='text-sm mt-2'>
+												<span className='font-bold text-text'>
 													Duration of the course:
 												</span>
 												&nbsp;{program.duration}
@@ -125,17 +125,17 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-xl transition'
+								class='group flex flex-col bg-secondary border shadow-md rounded-xl hover:shadow-xl transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center'>
 										<div>
-											<h3 class='font-extrabold text-xl text-gray-800'>
+											<h3 class='font-extrabold text-xl text-primary'>
 												{program.name}
 											</h3>
-											<p class='text-sm text-gray-500 mt-2'>
-												<span className='font-bold'>
+											<p class='text-sm mt-2'>
+												<span className='font-bold text-text'>
 													Duration of the course:
 												</span>
 												&nbsp;{program.duration}

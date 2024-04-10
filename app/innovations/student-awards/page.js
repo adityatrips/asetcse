@@ -53,12 +53,12 @@ const studentAwards = () => {
 				return (
 					<div
 						key={idx}
-						className='card w-[100%] bg-base-100 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out'
+						className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
 					>
 						<div className='card-body'>
 							<h2 className='card-title'>{item.name}</h2>
 							<p>
-								<span className='font-bold'>{item.award}</span> @{' '}
+								<span className='font-bold text-primary'>{item.award}</span> @{' '}
 								{item.competition}
 							</p>
 							<p>{item.prize}</p>

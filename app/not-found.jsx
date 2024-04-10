@@ -12,10 +12,10 @@ const NotFound = () => {
 				alt='Error'
 				className='mb-8'
 			/>
-			<p className='text-lg mt-4'>
+			<p className='text-lg text-text mt-4'>
 				Oops! The page you&apos;re looking for does not exist.
 			</p>
-			<p className='text-lg mt-4'>
+			<p className='text-lg text-text mt-4'>
 				Maybe move back to the{' '}
 				<Link
 					className='text-blue-500 hover:underline font-bold'

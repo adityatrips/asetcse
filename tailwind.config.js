@@ -19,6 +19,7 @@ module.exports = {
 			colors: {
 				primary: '#ffcc29',
 				secondary: '#2086bf',
+				text: '#fff',
 			},
 		},
 	},
@@ -29,14 +30,10 @@ module.exports = {
 		utils: true,
 		themes: [
 			{
-				mytheme: {
+				dark: {
+					...require('daisyui/src/theming/themes')['dark'],
 					primary: '#ffcc29',
 					secondary: '#2086bf',
-					neutral: '#827e79',
-					info: '#0000ff',
-					success: '#588D41',
-					warning: '#FFF300',
-					error: '#FC2E21',
 				},
 			},
 		],

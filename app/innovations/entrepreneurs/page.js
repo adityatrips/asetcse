@@ -12,9 +12,9 @@ const Entrepreneurs = () => {
 			{data.map((item, i) => (
 				<div
 					key={i}
-					className='card w-full bg-base-100 shadow-md hover:shadow-xl transition-shadow ease-in-out'
+					className='ccard w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow rounded-xl'
 				>
-					<figure className='py-5'>
+					<figure className='py-5 flex justify-center'>
 						<Image
 							height={300}
 							width={300}

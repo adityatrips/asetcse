@@ -15,34 +15,31 @@ const HonoryProfessors = () => {
 				{data.map((prof) => (
 					<div
 						key={prof.name}
-						class='group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition cursor-pointer'
-						href='#'
+						class='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
 					>
-						<div class='p-10 md:p-5'>
-							<div class='flex justify-between items-center gap-2'>
-								<div>
-									<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
-										{prof.name}
-									</h3>
-									<p class='text-sm text-gray-500 mt-2'>
-										<span className='font-bold'>Designation:</span>&nbsp;
-										{prof.position}
-									</p>
-									<p class='text-sm text-gray-500 mt-2'>
-										Joined&nbsp;
-										<span className='font-bold'>{prof.institute}</span> on&nbsp;
-										<span className='font-bold'>
-											{moment(prof.date).format('LL')}
-										</span>
-									</p>
-									<Link
-										href={`mailto:${prof.email}`}
-										class='text-sm mt-2 text-blue-600 hover:underline'
-									>
-										{prof.email}
-									</Link>
-								</div>
-							</div>
+						<div className='card-body'>
+							<h3 class='card-title'>{prof.name}</h3>
+							<p class='text-sm text-text mt-2'>
+								<span className='font-bold'>Designation:</span>
+								&nbsp;
+								{prof.position}
+							</p>
+							<p class='text-sm text-text mt-2'>
+								Joined&nbsp;
+								<span className='font-bold text-primary'>
+									{prof.institute}
+								</span>{' '}
+								on&nbsp;
+								<span className='font-bold text-primary'>
+									{moment(prof.date).format('LL')}
+								</span>
+							</p>
+							<Link
+								href={`mailto:${prof.email}`}
+								class='text-sm mt-2 text-primary hover:underline'
+							>
+								{prof.email}
+							</Link>
 						</div>
 					</div>
 				))}

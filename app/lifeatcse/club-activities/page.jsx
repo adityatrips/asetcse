@@ -68,13 +68,13 @@ const ClubActivities = () => {
 				{clubs.map((club, index) => (
 					<div
 						key={index}
-						className='card w-full shadow-md hover:shadow-xl transition-shadow'
+						className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
 					>
-						<figure className='py-5'>
+						<figure className='m-5 rounded-full'>
 							<Image
 								src={club.img}
 								alt={club.name}
-								className='w-full'
+								className='aspect-square rounded-full'
 							/>
 						</figure>
 						<div className='card-body text-center'>

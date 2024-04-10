@@ -9,8 +9,16 @@
 	--secondary: #2086bf;
 }
 
+.card-title {
+	@apply text-primary;
+}
+
 .icons {
 	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+* {
+	@apply text-text;
 }
 
 .title {

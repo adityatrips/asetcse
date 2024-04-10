@@ -185,12 +185,10 @@ export default function HomePage() {
 									/>
 								</div>
 								<div className='ms-4'>
-									<div className='text-xl font-semibold text-black '>
+									<div className='text-xl font-semibold '>
 										Prof. (Dr.) Manoj Kumar Pandey
 									</div>
-									<div className='text-md text-gray-500'>
-										Head of Institution
-									</div>
+									<div className='text-md'>Head of Institution</div>
 								</div>
 							</div>
 						</footer>
@@ -201,18 +199,18 @@ export default function HomePage() {
 					<h1 className='title'>Placement Partners</h1>
 					<div
 						id='carousel'
-						className='carousel space-x-2 rounded-box'
+						className='carousel carousel-center w-full p-4 space-x-4 bg-secondary rounded-box'
 					>
 						{imgs.map((img, i) => (
 							<div
 								key={`DaisyUICarousel_img_${i}`}
 								id={`DaisyUICarousel_img_${i}`}
-								className='carousel-item w-1/2 max-h-48'
+								className='carousel-item w-1/2 max-h-48 bg-base-100 rounded-xl'
 							>
 								<Image
 									quality={100}
 									key={i}
-									className='object-contain aspect-square w-[50vw] max-h-72 p-5'
+									className='object-contain aspect-square w-[50vw] bg-white rounded-lg p-5'
 									src={img.img}
 									alt={img.name}
 									width={300}

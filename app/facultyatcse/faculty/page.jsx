@@ -7,55 +7,54 @@ export const metadata = {
 	title: 'Faculties',
 };
 
-import { data as facultyPics } from '/images/faculty';
+import { data as facultyPics } from '@/images/faculty';
 
 const Faculty = () => {
 	return (
 		<div className='px-5 py-10'>
 			<h1 className='title pb-10'>Faculty</h1>
-			<div className='mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 w-[75vw] max-w-[75vw]'>
-				{data.map((prof) => (
-					<div
-						key={prof.author}
-						class='self-stretch group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition cursor-pointer'
-						href='#'
-					>
-						<Image
-							alt={prof.author}
-							src={facultyPics[prof.img]}
-							class='rounded-t-xl h-auto w-full object-cover aspect-square'
-							width={500}
-							height={500}
-						/>
-						<div class='p-10 md:p-5'>
-							<div class='flex justify-between items-center gap-2'>
-								<div>
-									<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
-										{prof.author}
-									</h3>
-									<p class='text-sm text-gray-500 mt-2'>
-										<span className='font-bold'>Institute:</span>&nbsp;
-										{prof.inst}
+
+			<div className='grid grid-cols-3 gap-5'>
+				{data.map((prof, index) => {
+					return (
+						<div
+							key={index}
+							className='card w-ful image-full aspect-square group'
+						>
+							<figure>
+								<Image
+									src={facultyPics[prof.img]}
+									alt={prof.author}
+									className='object-cover w-full h-full transition-all group-hover:scale-125'
+								/>
+							</figure>
+							<div className='card-body'>
+								<h2 className='transition-all card-title group-hover:opacity-0'>
+									{prof.author}
+								</h2>
+
+								<p className='transition-all group-hover:opacity-0'>
+									SOCPUS:&nbsp;{prof.scopus}
+								</p>
+								{prof.orcid !== '' && (
+									<p className='transition-all group-hover:opacity-0'>
+										ORCID:&nbsp;{prof.orcid}
 									</p>
-									<p className='text-sm text-gray-500 mt-2'>
-										{prof.scopus && (
-											<React.Fragment>
-												<span className='font-bold'>ORCID:</span>&nbsp;
-												{prof.orcid}
-											</React.Fragment>
-										)}
-									</p>
+								)}
+
+								<div className='card-actions duration-100 transition-transform justify-end'>
 									<Link
 										href={`https://www.scopus.com/authid/detail.uri?authorId=${prof.scopus}`}
-										class='text-sm mt-2 text-blue-600 hover:underline'
+										target='_blank'
+										className='btn btn-primary'
 									>
-										SCOPUS profile
+										Visit Profile
 									</Link>
 								</div>
 							</div>
 						</div>
-					</div>
-				))}
+					);
+				})}
 			</div>
 		</div>
 	);
