@@ -1,338 +1,182 @@
 'use client';
 
-import Image from 'next/image';
-import React, { useEffect } from 'react';
-import Accordion from './Accordion';
+import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-import menuSvg from '/images/icons/menu.svg';
-import expandSvg from '/images/icons/expand.svg';
-import auupLogo from '/images/auup-logo.png';
-import logo from '/images/logo.png';
-
-export default function Navbar() {
-	let accordionData = [
-		{
-			title: 'About',
-			id: 'about',
-			expandable: true,
-			content: [
-				{
-					title: 'Programmes Offered',
-					content: null,
-					child: true,
-					href: '/about/programmes',
-				},
-				{
-					title: 'Social Media',
-					content: null,
-					child: true,
-					href: '/about/social-media',
-				},
-			],
-		},
-		{
-			title: 'Life@CSE',
-			id: 'lifeatcse',
-			expandable: true,
-			content: [
-				{
-					title: 'Student Participation & Achievements',
-					content: null,
-					child: true,
-					href: '/lifeatcse/student-participation',
-				},
-				{
-					title: 'Club / Committee Activities',
-					content: null,
-					child: true,
-					href: '/lifeatcse/club-activities',
-				},
-				{
-					title: 'Student Chapters',
-					content: null,
-					child: true,
-					href: '/lifeatcse/student-chapters',
-				},
-				{
-					title: 'Parent Feedback',
-					content: null,
-					child: true,
-					href: '/lifeatcse/parent-feedback',
-				},
-				{
-					title: 'Industry Feedback',
-					content: null,
-					child: true,
-					href: '/lifeatcse/industry-feedback',
-				},
-			],
-		},
-		{
-			title: 'Events@CSE',
-			id: 'eventsatcse',
-			expandable: true,
-			content: [
-				{
-					title: 'Conferences',
-					content: null,
-					child: true,
-					href: '/eventsatcse/conferences',
-				},
-				{
-					title: 'Guest Lectures',
-					content: null,
-					child: true,
-					href: '/eventsatcse/guest-lectures',
-				},
-				{
-					title: 'Workshops',
-					content: null,
-					child: true,
-					href: '/eventsatcse/workshops',
-				},
-			],
-		},
-		{
-			title: 'Innovations',
-			id: 'innovations',
-			expandable: true,
-			content: [
-				{
-					title: 'Publications / Patents / Projects',
-					content: null,
-					child: true,
-					href: '/innovations/publications',
-				},
-				{
-					title: 'Entrepreneurs',
-					content: null,
-					child: true,
-					href: '/innovations/entrepreneurs',
-				},
-				{
-					title: 'Student Innovation',
-					content: null,
-					child: true,
-					href: '/innovations/student-innovation',
-				},
-				{
-					title: 'Student Awards',
-					content: null,
-					child: true,
-					href: '/innovations/student-awards',
-				},
-			],
-		},
-		{
-			title: 'Faculty@CSE',
-			id: 'facultyatcse',
-			expandable: true,
-			content: [
-				{
-					title: 'Honory Professors',
-					content: null,
-					child: true,
-					href: '/facultyatcse/honory-professors',
-				},
-				{
-					title: 'Faculty',
-					content: null,
-					child: true,
-					href: '/facultyatcse/faculty',
-				},
-			],
-		},
-		{
-			title: 'Alumni',
-			id: 'alumni',
-			expandable: true,
-			content: [
-				{
-					title: 'Alumni Awards',
-					content: null,
-					child: true,
-					href: '/alumni/alumni-awards',
-				},
-				{
-					title: 'Alumni Messages',
-					content: null,
-					child: true,
-					href: '/alumni/alumni-messages',
-				},
-			],
-		},
-		{
-			title: 'International Relations',
-			id: 'international',
-			expandable: true,
-			content: [
-				{
-					title: 'International Student Exchange',
-					content: null,
-					child: true,
-					href: '/international/exchange',
-				},
-				{
-					title: 'Students at Foreign Universities',
-					content: null,
-					child: true,
-					href: '/international/students',
-				},
-				{
-					title: 'International Visits',
-					content: null,
-					child: true,
-					href: '/international/visits',
-				},
-				{
-					title: 'International Speakers',
-					content: null,
-					child: true,
-					href: '/international/speakers',
-				},
-				{
-					title: "Student's Feedback",
-					content: null,
-					child: true,
-					href: '/international/student-feedback',
-				},
-				{
-					title: 'Gallery',
-					content: null,
-					child: true,
-					href: '/international/gallery',
-				},
-			],
-		},
-	];
-
-	const [expanded, setExpanded] = React.useState(false);
-
-	const toggleSidebar = () => {
-		setExpanded((prev) => !prev);
-	};
-
-	const [navHeight, setNavHeight] = React.useState('0');
-	const navRef = React.useRef(null);
-
-	useEffect(() => {
-		if (!navRef.current) {
-			return;
-		}
-
-		const resizeObserver = new ResizeObserver(() => {
-			if (navRef.current.offsetHeight !== navHeight) {
-				setNavHeight(`${navRef.current.offsetHeight}`);
-				console.log(`${navRef.current.offsetHeight}`);
-			}
-		});
-
-		resizeObserver.observe(navRef.current);
-
-		return function cleanup() {
-			resizeObserver.disconnect();
-		};
-	}, [navHeight]);
-
+const Navbar = () => {
 	return (
-		<React.Fragment>
-			<div
-				className={`fixed transition-colors top-0 left-0 w-[100%] h-[100vh] ${
-					expanded ? 'bg-[rgba(0,0,0,0.5)]' : 'hidden'
-				}`}
-			></div>
-
-			{/* NAVBAR  */}
-
-			<nav>
-				<div className='h-[7rem] flex justify-center items-center z-30'>
-					<Image
-						height={50}
-						width={50}
-						src={menuSvg}
-						alt='Menu'
-						className='md:hidden absolute w-[10vh] p-5 top-[2.5vh] left-[2.5vh] cursor-pointer z-30 bg-white drop-shadow-2xl'
-						onClick={toggleSidebar}
-					/>
-					<Image
-						src={auupLogo}
-						alt='Amity University Uttar Pradesh'
-						quality={100}
-						className='w-64 sm:w-96'
-					/>
-				</div>
-				<div className='flex justify-center items-center md:py-2'>
-					{accordionData.map((item, index) => {
-						return (
-							<div
-								key={index}
-								className='hidden md:block'
-							>
-								<div
-									className='px-4 py-2 text-lg font-semibold text-black hover:text-blue-500 relative flex gap-2'
-									onMouseEnter={() => {
-										document
-											.getElementById(item.title)
-											.classList.remove('hidden');
-									}}
-									onMouseLeave={() => {
-										document.getElementById(item.title).classList.add('hidden');
-									}}
-								>
-									{item.title}
-									{item.expandable && (
-										<Image
-											src={expandSvg}
-											alt='Arrow Down'
-											width={20}
-											height={20}
-											className='inline'
-										/>
-									)}
-									<div
-										className='absolute hidden top-[2rem] drop-shadow-lg bg-white rounded-md'
-										id={item.title}
-									>
-										{item.expandable && (
-											<div>
-												{item.content.map((subItem, index) => {
-													return (
-														<div
-															className='text-lg font-semibold text-black hover:text-blue-500 py-1 px-2'
-															key={index}
-														>
-															<Link href={subItem.href}>{subItem.title}</Link>
-														</div>
-													);
-												})}
-											</div>
-										)}
-									</div>
-								</div>
-							</div>
-						);
-					})}
-				</div>
-			</nav>
-
-			{/* SIDEBAR */}
-
-			<div
-				className={`fixed transition-all duration-200 top-0 ${
-					expanded ? 'left-0' : '-left-full'
-				} w-[50vw] h-[100vh] bg-[#fff]`}
-				id='sidebar'
-			>
-				<Accordion accordionData={accordionData} />
-				<div className='absolute hidden md:block bottom-0 left-0 m-[2%] w-[96%] h-[50px] bg-white'>
-					<Image
-						alt='AUUP Logo'
-						src={logo}
-					/>
+		<div className='navbar bg-[#FFF]'>
+			<div className='navbar-start'>
+				<div className='dropdown'>
+					<div
+						tabIndex={0}
+						role='button'
+						className='btn btn-ghost'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							className='h-5 w-5'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+						>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='2'
+								d='M4 6h16M4 12h8m-8 6h16'
+							/>
+						</svg>
+					</div>
+					<ul
+						tabIndex={0}
+						className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60'
+					>
+						<li>
+							<Link href='/'>Home</Link>
+						</li>
+						<li>
+							<details>
+								<summary>About</summary>
+								<ul>
+									<li>
+										<Link href='/about/programmes'>Programmes Offered</Link>
+									</li>
+									<li>
+										<Link href='/about/social-media'>Social Media</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Life@CSE</summary>
+								<ul>
+									<li>
+										<Link href='/lifeatcse/student-participation'>
+											Student Participation & Achievements
+										</Link>
+									</li>
+									<li>
+										<Link href='/lifeatcse/club-activities'>
+											Club/Committee Activities
+										</Link>
+									</li>
+									<li>
+										<Link href='/lifeatcse/'>Student Chapters</Link>
+									</li>
+									<li>
+										<Link href='/lifeatcse/'>Parent Feedback</Link>
+									</li>
+									<li>
+										<Link href='/lifeatcse/'>Industry Feedback</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Events@CSE</summary>
+								<ul>
+									<li>
+										<Link href='/eventsatcse/conferences'>Conferences</Link>
+									</li>
+									<li>
+										<Link href='/eventsatcse/'>Guest Lectures</Link>
+									</li>
+									<li>
+										<Link href='/eventsatcse/workshops'>Workshops</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Faculty@CSE</summary>
+								<ul>
+									<li>
+										<Link href='/facultyatcse/honory-professors'>
+											Honory Professors
+										</Link>
+									</li>
+									<li>
+										<Link href='/facultyatcse/faculty'>Faculty</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Innovations</summary>
+								<ul>
+									<li>
+										<Link href='/innovations/patents-publications'>
+											Publications/Patents/Projects
+										</Link>
+									</li>
+									<li>
+										<Link href=''>Entrepreneurs</Link>
+									</li>
+									<li>
+										<Link href=''>Student Innovation</Link>
+									</li>
+									<li>
+										<Link href='/innovations/student-awards'>
+											Student Awards
+										</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Alumni</summary>
+								<ul>
+									<li>
+										<Link href=''>Alumni Awards</Link>
+									</li>
+									<li>
+										<Link href=''>Alumni Messages</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>International Relations</summary>
+								<ul>
+									<li>
+										<Link href=''>International Student Exchange</Link>
+									</li>
+									<li>
+										<Link href=''>Students at Foreign Universities</Link>
+									</li>
+									<li>
+										<Link href=''>International Visits</Link>
+									</li>
+									<li>
+										<Link href=''>International Speakers</Link>
+									</li>
+									<li>
+										<Link href=''>Student&apos;s Feedback</Link>
+									</li>
+									<li>
+										<Link href=''>Gallery</Link>
+									</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</React.Fragment>
+			<div className='navbar-center'>
+				<span className='font-bold'>
+					Amity School of Engineering and Technology
+				</span>
+			</div>
+			<div className='navbar-end'></div>
+		</div>
 	);
-}
+};
+
+export default Navbar;
