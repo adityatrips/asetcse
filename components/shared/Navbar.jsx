@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
 	return (
-		<div className='navbar bg-[#FFF]'>
+		<div className='navbar z-10 bg-[#FFF]'>
 			<div className='navbar-start'>
 				<div className='dropdown'>
 					<div
@@ -62,14 +62,18 @@ const Navbar = () => {
 											Club/Committee Activities
 										</Link>
 									</li>
-									<li>
+									{/* <li>
 										<Link href='/lifeatcse/'>Student Chapters</Link>
+									</li> */}
+									<li>
+										<Link href='/lifeatcse/parent-feedback'>
+											Parent Feedback
+										</Link>
 									</li>
 									<li>
-										<Link href='/lifeatcse/'>Parent Feedback</Link>
-									</li>
-									<li>
-										<Link href='/lifeatcse/'>Industry Feedback</Link>
+										<Link href='/lifeatcse/industry-feedback'>
+											Industry Feedback
+										</Link>
 									</li>
 								</ul>
 							</details>
@@ -81,9 +85,9 @@ const Navbar = () => {
 									<li>
 										<Link href='/eventsatcse/conferences'>Conferences</Link>
 									</li>
-									<li>
+									{/* <li>
 										<Link href='/eventsatcse/'>Guest Lectures</Link>
-									</li>
+									</li> */}
 									<li>
 										<Link href='/eventsatcse/workshops'>Workshops</Link>
 									</li>
@@ -115,11 +119,11 @@ const Navbar = () => {
 										</Link>
 									</li>
 									<li>
-										<Link href=''>Entrepreneurs</Link>
+										<Link href='/innovations/entrepreneurs'>Entrepreneurs</Link>
 									</li>
-									<li>
+									{/* <li>
 										<Link href=''>Student Innovation</Link>
-									</li>
+									</li> */}
 									<li>
 										<Link href='/innovations/student-awards'>
 											Student Awards
@@ -132,11 +136,11 @@ const Navbar = () => {
 							<details>
 								<summary>Alumni</summary>
 								<ul>
-									<li>
+									{/* <li>
 										<Link href=''>Alumni Awards</Link>
-									</li>
+									</li> */}
 									<li>
-										<Link href=''>Alumni Messages</Link>
+										<Link href='/alumni/message'>Alumni Messages</Link>
 									</li>
 								</ul>
 							</details>

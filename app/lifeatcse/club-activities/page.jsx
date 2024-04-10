@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 
 const clubs = [
 	{
@@ -65,22 +66,26 @@ const ClubActivities = () => {
 				{clubs.map((club, index) => (
 					<div
 						key={index}
-						className='bg-white shadow-md rounded-lg overflow-hidden flex flex-col justify-between'
+						className='card w-full shadow-md hover:shadow-xl transition-shadow'
 					>
-						<div className='p-4 '>
+						<figure className='py-5'>
 							<Image
 								src={club.img}
 								alt={club.name}
 								className='w-full'
 							/>
-							<h1 className='font-bold text-xl mt-2'>{club.name}</h1>
+						</figure>
+						<div className='card-body text-center'>
+							<h2 className='card-title'>{club.name}</h2>
+							<div className='card-actions justify-end'>
+								<Link
+									href={club.pdf}
+									className='btn btn-primary'
+								>
+									More
+								</Link>
+							</div>
 						</div>
-						<a
-							className='bg-blue-500 w-[96%] py-2 rounded-md text-white m-[2%] text-center hover:bg-blue-600 transition-all duration-300 ease-in-out'
-							href={club.pdf}
-						>
-							View PDF
-						</a>
 					</div>
 				))}
 			</div>

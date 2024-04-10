@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 import 'slick-carousel/slick/slick.css';
@@ -58,6 +58,28 @@ const imgs = [
 ];
 
 export default function HomePage() {
+	const [activeIndex, setActiveIndex] = React.useState(0);
+
+	React.useEffect(() => {
+		const intervalId = setInterval(() => {
+			const newActiveIndex =
+				activeIndex + 1 === imgs.length ? 0 : activeIndex + 1;
+			goToOtherImage(`#DaisyUICarousel_img_${newActiveIndex}`);
+			setActiveIndex(newActiveIndex);
+		}, 2500);
+
+		return () => clearInterval(intervalId);
+	}, [activeIndex]);
+
+	const goToOtherImage = (href) => {
+		const carousel = document.getElementById('carousel');
+		if (carousel) {
+			const target = document.querySelector(href);
+			const left = target.offsetLeft;
+			carousel.scrollTo({ left: left });
+		}
+	};
+
 	return (
 		<>
 			<div className='z-0'>
@@ -177,31 +199,28 @@ export default function HomePage() {
 
 				<div className='px-5 py-10'>
 					<h1 className='title'>Placement Partners</h1>
-					<Slider
-						dots
-						infinite
-						autoplay={true}
-						autoplaySpeed={2000}
-						slidesToScroll={1}
-						slidesToShow={3}
-						swipeToSlide
-						touchMove
-						centerMode
-						pauseOnFocus={false}
-						pauseOnHover={false}
+					<div
+						id='carousel'
+						className='carousel space-x-2 rounded-box'
 					>
 						{imgs.map((img, i) => (
-							<Image
-								quality={100}
-								key={i}
-								className='object-contain aspect-square w-[33vw] h-full p-5'
-								src={img.img}
-								alt={img.name}
-								width={300}
-								height={300}
-							/>
+							<div
+								key={`DaisyUICarousel_img_${i}`}
+								id={`DaisyUICarousel_img_${i}`}
+								className='carousel-item w-1/2 max-h-48'
+							>
+								<Image
+									quality={100}
+									key={i}
+									className='object-contain aspect-square w-[50vw] max-h-72 p-5'
+									src={img.img}
+									alt={img.name}
+									width={300}
+									height={300}
+								/>
+							</div>
 						))}
-					</Slider>
+					</div>
 				</div>
 			</div>
 		</>

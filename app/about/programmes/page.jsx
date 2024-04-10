@@ -81,13 +81,13 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition'
+								class='group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-xl transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center gap-2'>
 										<div>
-											<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
+											<h3 class='font-extrabold text-xl text-gray-800'>
 												{program.name}
 											</h3>
 											<p class='text-sm text-gray-500 mt-2'>
@@ -125,13 +125,13 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition'
+								class='group flex flex-col bg-white border shadow-md rounded-xl hover:shadow-xl transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center'>
 										<div>
-											<h3 class='group-hover:text-blue-600 font-extrabold text-xl text-gray-800'>
+											<h3 class='font-extrabold text-xl text-gray-800'>
 												{program.name}
 											</h3>
 											<p class='text-sm text-gray-500 mt-2'>
