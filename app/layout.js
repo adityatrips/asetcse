@@ -14,7 +14,10 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata = {
-	title: 'Amity School of Engineering and Technology',
+	title: {
+		default: 'ASET | Home',
+		template: 'ASET | %s',
+	},
 	description: 'This is the departmental website of ASET, Amity Noida.',
 };
 

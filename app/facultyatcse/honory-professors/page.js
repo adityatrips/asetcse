@@ -3,6 +3,10 @@ import { data } from './data';
 import moment from 'moment';
 import Link from 'next/link';
 
+export const metadata = {
+	title: 'Honoray Professors',
+};
+
 const HonoryProfessors = () => {
 	return (
 		<div className='px-5 py-10'>

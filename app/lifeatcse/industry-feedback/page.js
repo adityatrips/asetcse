@@ -1,6 +1,10 @@
 import React from 'react';
 import { data } from './data';
 
+export const metadata = {
+	title: 'Industry Feedback',
+};
+
 const ParentFeedback = () => {
 	return (
 		<div className='grid grid-cols-1 md:grid-cols-2 px-5 py-10 gap-5'>

@@ -2,6 +2,10 @@ import React from 'react';
 import { data } from './data';
 import Image from 'next/image';
 
+export const metadata = {
+	title: 'Entrepreneurs',
+};
+
 const Entrepreneurs = () => {
 	return (
 		<div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 py-10'>
@@ -11,7 +15,9 @@ const Entrepreneurs = () => {
 					className='card w-full bg-base-100 shadow-md hover:shadow-xl transition-shadow ease-in-out'
 				>
 					<figure className='py-5'>
-						<img
+						<Image
+							height={300}
+							width={300}
 							src={item.img}
 							alt='Shoes'
 							className='rounded-xl'

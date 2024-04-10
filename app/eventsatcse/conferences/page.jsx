@@ -1,5 +1,10 @@
 import React from 'react';
 import ConfluenceCard from './_confluenceCard';
+
+export const metadata = {
+	title: 'Confluences',
+};
+
 const page = () => {
 	return (
 		<>

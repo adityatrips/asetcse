@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+	title: 'Student Awards',
+};
+
 const data = [
 	{
 		name: 'Ojasvi Jain',

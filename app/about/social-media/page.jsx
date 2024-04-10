@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+	title: 'Social Media',
+};
+
 const SocialPage = () => {
 	return (
 		<div className='px-5 py-10'>

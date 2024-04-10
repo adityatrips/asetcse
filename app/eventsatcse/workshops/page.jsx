@@ -21,6 +21,10 @@ import x16 from '/images/workshop/16.png';
 // import x20 from '/images/workshop/20.jpeg';
 // import x21 from '/images/workshop/21.jpeg';
 
+export const metadata = {
+	title: 'Workshops',
+};
+
 export default function Workshop() {
 	return (
 		<>

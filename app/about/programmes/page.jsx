@@ -1,7 +1,3 @@
-'use client';
-import Navbar from '/components/shared/Navbar';
-import Breadcrumbs from '/components/Breadcrumbs';
-import { usePathname } from 'next/navigation';
 import React from 'react';
 import Link from 'next/link';
 
@@ -70,6 +66,10 @@ let pgPrograms = [
 		sponsored: '₹ 3,10,000',
 	},
 ];
+
+export const metadata = {
+	title: 'Programmes Offered',
+};
 
 const Programs = () => {
 	return (

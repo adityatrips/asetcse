@@ -2,6 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import { data } from './data';
 
+export const metadata = {
+	title: 'Student Participation',
+};
+
 const StudentParticipation = () => {
 	return (
 		<div className='px-5 py-10'>

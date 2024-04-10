@@ -3,6 +3,10 @@ import { data } from './data';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const metadata = {
+	title: 'Faculties',
+};
+
 import { data as facultyPics } from '/images/faculty';
 
 const Faculty = () => {
