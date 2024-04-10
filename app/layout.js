@@ -18,7 +18,8 @@ export const metadata = {
 		default: 'ASET | Home',
 		template: 'ASET | %s',
 	},
-	description: 'This is the departmental website of ASET, Amity Noida.',
+	description:
+		'Welcome to the official website of the Computer Science and Engineering department of Amity School of Engineering and Technology, Noida. Explore our website to know more about us.',
 };
 
 export default function RootLayout({ children }) {
