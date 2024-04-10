@@ -81,7 +81,7 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-secondary shadow-md rounded-xl hover:shadow-xl transition'
+								class='group flex flex-col bg-secondary hover:shadow-primary shadow-md rounded-xl hover:shadow-md transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>
@@ -125,7 +125,7 @@ const Programs = () => {
 						return (
 							<Link
 								key={index}
-								class='group flex flex-col bg-secondary border shadow-md rounded-xl hover:shadow-xl transition'
+								class='group flex flex-col bg-secondary hover:shadow-primary shadow-md rounded-xl hover:shadow-md transition'
 								href='#'
 							>
 								<div class='p-10 md:p-5'>

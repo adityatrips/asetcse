@@ -14,7 +14,7 @@ const Faculty = () => {
 		<div className='px-5 py-10'>
 			<h1 className='title pb-10'>Faculty</h1>
 
-			<div className='grid grid-cols-3 gap-5'>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
 				{data.map((prof, index) => {
 					return (
 						<div
@@ -33,11 +33,11 @@ const Faculty = () => {
 									{prof.author}
 								</h2>
 
-								<p className='transition-all group-hover:opacity-0'>
+								<p className='transition-all group-hover:opacity-0 text-white'>
 									SOCPUS:&nbsp;{prof.scopus}
 								</p>
 								{prof.orcid !== '' && (
-									<p className='transition-all group-hover:opacity-0'>
+									<p className='transition-all group-hover:opacity-0 text-white'>
 										ORCID:&nbsp;{prof.orcid}
 									</p>
 								)}
