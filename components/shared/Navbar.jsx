@@ -4,6 +4,17 @@ import React from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
+	const changeTheme = () => {
+		const html = document.documentElement;
+		if (html.getAttribute('data-theme') === 'dark') {
+			html.setAttribute('data-theme', 'light');
+			localStorage.setItem('theme', 'light');
+		} else {
+			html.setAttribute('data-theme', 'dark');
+			localStorage.setItem('theme', 'dark');
+		}
+	};
+
 	return (
 		<div className='navbar z-50 bg-secondary'>
 			<div className='navbar-start'>
@@ -176,12 +187,19 @@ const Navbar = () => {
 			<div className='navbar-center'>
 				<Link
 					href='/'
-					className='font-bold'
+					className='font-bold text-text'
 				>
 					ASET
 				</Link>
 			</div>
-			<div className='navbar-end'></div>
+			<div className='navbar-end'>
+				<button
+					onClick={changeTheme}
+					className='btn  btn-primary text-text'
+				>
+					Change Theme
+				</button>
+			</div>
 		</div>
 	);
 };

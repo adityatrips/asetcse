@@ -9,6 +9,16 @@
 	--secondary: #2086bf;
 }
 
+.bg-secondary *,
+.btn-secondary {
+	color: #fff;
+}
+
+.bg-primary *,
+.btn-primary {
+	color: #000;
+}
+
 .card-title {
 	@apply text-primary;
 }

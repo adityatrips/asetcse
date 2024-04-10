@@ -19,7 +19,8 @@ module.exports = {
 			colors: {
 				primary: '#ffcc29',
 				secondary: '#2086bf',
-				text: '#fff',
+				text: 'var(--daisyui-text-color)',
+				onSecondary: '#fff',
 			},
 		},
 	},
@@ -34,6 +35,13 @@ module.exports = {
 					...require('daisyui/src/theming/themes')['dark'],
 					primary: '#ffcc29',
 					secondary: '#2086bf',
+					'--daisyui-text-color': '#fff',
+				},
+				light: {
+					...require('daisyui/src/theming/themes')['light'],
+					primary: '#ffcc29',
+					secondary: '#2086bf',
+					'--daisyui-text-color': '#000',
 				},
 			},
 		],
