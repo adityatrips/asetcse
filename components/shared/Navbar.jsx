@@ -185,6 +185,13 @@ const Menu = ({ horizontal = false }) => {
 };
 
 const MenuHor = () => {
+	const [openMenu, setOpenMenu] = React.useState(null);
+
+	const handleMenuClick = (index) => {
+		setOpenMenu(null);
+		setOpenMenu(index);
+	};
+
 	return (
 		<ul
 			tabIndex={0}
@@ -194,9 +201,13 @@ const MenuHor = () => {
 				<Link href='/'>Home</Link>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(1)}>
 					<summary>About</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 1 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/about/programmes'>Programmes Offered</Link>
 						</li>
@@ -207,9 +218,13 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(2)}>
 					<summary>Life@CSE</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 2 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/lifeatcse/student-participation'>
 								Student Participation & Achievements
@@ -220,9 +235,6 @@ const MenuHor = () => {
 								Club/Committee Activities
 							</Link>
 						</li>
-						{/* <li>
-										<Link href='/lifeatcse/'>Student Chapters</Link>
-									</li> */}
 						<li>
 							<Link href='/lifeatcse/parent-feedback'>Parent Feedback</Link>
 						</li>
@@ -233,15 +245,16 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(3)}>
 					<summary>Events@CSE</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 3 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/eventsatcse/conferences'>Conferences</Link>
 						</li>
-						{/* <li>
-										<Link href='/eventsatcse/'>Guest Lectures</Link>
-									</li> */}
 						<li>
 							<Link href='/eventsatcse/workshops'>Workshops</Link>
 						</li>
@@ -249,9 +262,13 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(4)}>
 					<summary>Faculty@CSE</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 4 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/facultyatcse/honory-professors'>
 								Honory Professors
@@ -264,9 +281,13 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(5)}>
 					<summary>Innovations</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 5 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/innovations/patents-publications'>
 								Publications/Patents/Projects
@@ -275,9 +296,6 @@ const MenuHor = () => {
 						<li>
 							<Link href='/innovations/entrepreneurs'>Entrepreneurs</Link>
 						</li>
-						{/* <li>
-										<Link href=''>Student Innovation</Link>
-									</li> */}
 						<li>
 							<Link href='/innovations/student-awards'>Student Awards</Link>
 						</li>
@@ -285,12 +303,13 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(6)}>
 					<summary>Alumni</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
-						{/* <li>
-										<Link href=''>Alumni Awards</Link>
-									</li> */}
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 6 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href='/alumni/message'>Alumni Messages</Link>
 						</li>
@@ -298,9 +317,13 @@ const MenuHor = () => {
 				</details>
 			</li>
 			<li>
-				<details>
+				<details onClick={() => handleMenuClick(7)}>
 					<summary>International Relations</summary>
-					<ul className='bg-secondary shadow-md shadow-[#00000050]'>
+					<ul
+						className={`bg-secondary shadow-md shadow-[#00000050] ${
+							openMenu === 7 ? '' : 'hidden'
+						}`}
+					>
 						<li>
 							<Link href=''>International Student Exchange</Link>
 						</li>

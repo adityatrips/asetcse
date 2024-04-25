@@ -81,6 +81,7 @@ const ClubActivities = () => {
 							<h2 className='card-title'>{club.name}</h2>
 							<div className='card-actions justify-end'>
 								<Link
+									target='_blank'
 									href={club.pdf}
 									className='btn btn-primary'
 								>
