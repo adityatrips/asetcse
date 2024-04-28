@@ -1,5 +1,4 @@
 import React from 'react';
-import { data } from './data';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,6 +7,7 @@ export const metadata = {
 };
 
 import { data as facultyPics } from '@/images/faculty';
+import { faculties } from '@/data';
 
 const Faculty = () => {
 	return (
@@ -15,7 +15,7 @@ const Faculty = () => {
 			<h1 className='title pb-10'>Faculty</h1>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-				{data.map((prof, index) => {
+				{faculties.map((prof, index) => {
 					return (
 						<div
 							key={index}
@@ -46,9 +46,9 @@ const Faculty = () => {
 									<Link
 										href={`https://www.scopus.com/authid/detail.uri?authorId=${prof.scopus}`}
 										target='_blank'
-										className='btn btn-primary'
+										className='bg-primary px-5 py-2 w-full text-center rounded-br-md rounded-bl-md'
 									>
-										Visit Profile
+										<span className='text-black'>Visit Profile</span>
 									</Link>
 								</div>
 							</div>

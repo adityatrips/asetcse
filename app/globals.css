@@ -8,6 +8,10 @@ nav > div {
 	@apply md:justify-center w-full !important;
 }
 
+div[data-testid='flowbite-dropdown'] > ul > li[role='menuitem'] > a {
+	@apply hover:bg-secondary md:hover:bg-secondary !important;
+}
+
 button[aria-haspopup='menu'] {
 	padding: 0.5rem 0 !important;
 	@apply hover:text-primary !important;
@@ -18,8 +22,8 @@ div[data-testid='flowbite-navbar-collapse'] > ul > li > a {
 }
 
 :root {
-	--primary: #dfb323;
-	--secondary: #2086bf;
+	--p: #dfb323;
+	--s: #2086bf;
 }
 
 .bg-secondary *,
@@ -27,13 +31,30 @@ div[data-testid='flowbite-navbar-collapse'] > ul > li > a {
 	color: #fff;
 }
 
-.bg-primary *,
-.btn-primary {
+.bg-primary * {
 	color: #000;
 }
 
 .card-title {
 	@apply text-primary;
+}
+
+@media (min-width: 640px) {
+	table {
+		display: inline-table !important;
+	}
+
+	thead tr:not(:first-child) {
+		display: none;
+	}
+}
+
+td:not(:last-child) {
+	border-bottom: 0;
+}
+
+th:not(:last-child) {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .icons {
@@ -45,7 +66,7 @@ div[data-testid='flowbite-navbar-collapse'] > ul > li > a {
 }
 
 .title {
-	background: linear-gradient(45deg, var(--primary), var(--secondary));
+	background: linear-gradient(45deg, var(--p), var(--s));
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -55,5 +76,5 @@ div[data-testid='flowbite-navbar-collapse'] > ul > li > a {
 }
 
 .title-bg {
-	background: linear-gradient(45deg, var(--primary), var(--secondary));
+	background: linear-gradient(45deg, var(--p), var(--s));
 }

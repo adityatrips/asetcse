@@ -23,74 +23,119 @@ const Nav = () => {
 				</Navbar.Link>
 				<Dropdown
 					inline
-					className='bg-secondary justify-center w-full'
+					className='bg-secondary justify-center   hover:bg-secondary hover:text-primary'
 					floatingArrow
 					label='About'
 					dismissOnClick
 				>
-					<Dropdown.Item href='/about/programmes'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/about/programmes'
+					>
 						Programmes Offered
 					</Dropdown.Item>
-					<Dropdown.Item href='/about/social-media'>Contact</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/about/social-media'
+					>
+						Contact
+					</Dropdown.Item>
 				</Dropdown>
 				<Dropdown
 					inline
-					className='bg-secondary w-[calc(100%-5rem)]'
+					className='bg-secondary justify-center  hover:bg-secondary hover:text-primary'
 					floatingArrow
 					label='Life@CSE'
 					dismissOnClick
 				>
-					<Dropdown.Item href='/lifeatcse/club-activities'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/lifeatcse/club-activities'
+					>
 						Club Activities
 					</Dropdown.Item>
-					<Dropdown.Item href='/lifeatcse/industry-feedback'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/lifeatcse/industry-feedback'
+					>
 						Industry Feedback
 					</Dropdown.Item>
-					<Dropdown.Item href='/lifeatcse/parent-feedback'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/lifeatcse/parent-feedback'
+					>
 						Parent Feedback
 					</Dropdown.Item>
-					<Dropdown.Item href='/lifeatcse/student-particiaption'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/lifeatcse/student-particiaption'
+					>
 						Student Participation
 					</Dropdown.Item>
 				</Dropdown>
 				<Dropdown
 					inline
-					className='bg-secondary w-[calc(100%-5rem)]'
+					className='bg-secondary justify-center  hover:bg-secondary hover:text-primary'
 					floatingArrow
 					label='Events@CSE'
 					dismissOnClick
 				>
-					<Dropdown.Item href='/eventsatcse/conferences'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/eventsatcse/conferences'
+					>
 						Conferences
 					</Dropdown.Item>
-					<Dropdown.Item href='/eventsatcse/workshops'>Workshops</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/eventsatcse/workshops'
+					>
+						Workshops
+					</Dropdown.Item>
 				</Dropdown>
 				<Dropdown
 					inline
-					className='bg-secondary w-[calc(100%-5rem)]'
+					className='bg-secondary justify-center  hover:bg-secondary hover:text-primary'
 					floatingArrow
 					label='Faculty@CSE'
 					dismissOnClick
 				>
-					<Dropdown.Item href='/facultyatcse/faculty'>Faculty</Dropdown.Item>
-					<Dropdown.Item href='/facultyatcse/honory-professors'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/facultyatcse/faculty'
+					>
+						Faculty
+					</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/facultyatcse/honory-professors'
+					>
 						Honory Professors
 					</Dropdown.Item>
 				</Dropdown>
 				<Dropdown
 					inline
-					className='bg-secondary w-[calc(100%-5rem)]'
+					className='bg-secondary justify-center  hover:bg-secondary hover:text-primary'
 					floatingArrow
 					label='Innovations'
 					dismissOnClick
 				>
-					<Dropdown.Item href='/innovations/entrepreneurs'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/innovations/entrepreneurs'
+					>
 						Entrepreneurs
 					</Dropdown.Item>
-					<Dropdown.Item href='/innovations/patents-publications'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/innovations/patents-publications'
+					>
 						Publications/Patents/Projects
 					</Dropdown.Item>
-					<Dropdown.Item href='/innovations/student-awards'>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/innovations/student-awards'
+					>
 						Student Awards
 					</Dropdown.Item>
 				</Dropdown>

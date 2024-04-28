@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { data } from './data';
+import { participation } from '@/data';
 
 export const metadata = {
 	title: 'Student Participation',
@@ -12,7 +12,7 @@ const StudentParticipation = () => {
 			<h1 className='title pb-10'>Student Participation</h1>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
-				{data.map((item, index) => {
+				{participation.map((item, index) => {
 					return (
 						<div
 							key={index}

@@ -80,23 +80,8 @@ export default function HomePage() {
 		}
 	};
 
-	const changeTheme = () => {
-		const html = document.documentElement;
-		if (html.getAttribute('data-theme') === 'dark') {
-			html.setAttribute('data-theme', 'light');
-		} else {
-			html.setAttribute('data-theme', 'dark');
-		}
-	};
-
 	return (
 		<>
-			<button
-				onClick={changeTheme}
-				className='fixed bottom-2 right-2 bg-secondary py-2 px-5 text-white rounded-full'
-			>
-				Change Theme
-			</button>
 			<div className='z-0'>
 				<Image
 					alt='Amity Campus'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from './data';
+import { parentFeedback } from '@/data';
 
 export const metadata = {
 	title: 'Parent Feedback',
@@ -8,7 +8,7 @@ export const metadata = {
 const ParentFeedback = () => {
 	return (
 		<div className='grid grid-cols-1 md:grid-cols-2 px-5 py-10 gap-5'>
-			{data.map((item, i) => (
+			{parentFeedback.map((item, i) => (
 				<div
 					key={i}
 					className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'

@@ -15,11 +15,6 @@ import x13 from '/images/workshop/13.png';
 import x14 from '/images/workshop/14.png';
 import x15 from '/images/workshop/15.png';
 import x16 from '/images/workshop/16.png';
-// import x17 from '/images/workshop/17.png';
-// import x18 from '/images/workshop/18.jpeg';
-// import x19 from '/images/workshop/19.jpeg';
-// import x20 from '/images/workshop/20.jpeg';
-// import x21 from '/images/workshop/21.jpeg';
 
 export const metadata = {
 	title: 'Workshops',

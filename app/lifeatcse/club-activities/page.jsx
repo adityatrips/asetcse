@@ -2,54 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
+import { clubs } from '@/data';
+
 export const metadata = {
 	title: 'Club Activities',
 };
-
-const clubs = [
-	{
-		name: 'ALIAS',
-		id: 'alias',
-		pdf: 'https://drive.google.com/uc?export=download&id=1eNWd8kaAw4kafir7bnP30cVdZJa4CosD',
-		img: require('/images/clubs/ALIAS.jpg'),
-	},
-	{
-		name: 'Cloud Security Club',
-		id: 'csc',
-		pdf: 'https://drive.google.com/uc?export=download&id=1HyEl2h8OCWi8Xu47EwZkFh8fy9pCSwVJ',
-		img: JSON.parse(JSON.stringify(require('/images/clubs/CLOUD_SEC.jpg'))),
-	},
-	{
-		name: 'Aritificial Intelligence Club',
-		id: 'aic',
-		pdf: 'https://drive.google.com/uc?export=download&id=1dFW6EoePMClcYRGB-BzHOK-VAf6hfLhW',
-		img: require('/images/clubs/AI.jpg'),
-	},
-	{
-		name: 'Data Science Club',
-		id: 'dsc',
-		pdf: 'https://drive.google.com/uc?export=download&id=1DWbWOYzpw_nSkR7w6_2LnsA16sgolX72',
-		img: require('/images/clubs/DS.jpg'),
-	},
-	{
-		name: 'Software Engineering Club',
-		id: 'sec',
-		pdf: 'https://drive.google.com/uc?export=download&id=1DRuc_TIEAmEbtxdLrD9Xdn9k3T0gTLoX',
-		img: require('/images/clubs/SE.jpg'),
-	},
-	{
-		name: 'Virtual Reality & Game Development',
-		id: 'vrgd',
-		pdf: 'https://drive.google.com/uc?export=download&id=1_l8S_mrZNYshOBGUanBpThA92iyZOXKf',
-		img: require('/images/clubs/VRGD.jpeg'),
-	},
-	{
-		name: 'Cyber Security Club',
-		id: 'cysc',
-		pdf: 'https://drive.google.com/uc?export=download&id=1i8WvDLOIgvo7vMcyMLuTgMLaatf-AuZg',
-		img: JSON.parse(JSON.stringify(require('/images/clubs/CYBER_SEC.png'))),
-	},
-];
 
 const ClubActivities = () => {
 	return (
@@ -70,24 +27,24 @@ const ClubActivities = () => {
 						key={index}
 						className='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'
 					>
-						<figure className='m-5 rounded-full'>
-							<Image
-								src={club.img}
-								alt={club.name}
-								className='aspect-square rounded-full'
-							/>
-						</figure>
-						<div className='card-body text-center'>
+						<div className='card-body text-center h-full'>
+							<figure className='m-5 rounded-full'>
+								<Image
+									src={club.img}
+									alt={club.name}
+									className='aspect-square rounded-full'
+								/>
+							</figure>
 							<h2 className='card-title'>{club.name}</h2>
-							<div className='card-actions justify-end'>
-								<Link
-									target='_blank'
-									href={club.pdf}
-									className='btn btn-primary'
-								>
-									More
-								</Link>
-							</div>
+						</div>
+						<div className='card-actions justify-end'>
+							<Link
+								target='_blank'
+								href={club.pdf}
+								className='bg-primary px-5 py-2 w-full text-center rounded-br-md rounded-bl-md'
+							>
+								<span>More</span>
+							</Link>
 						</div>
 					</div>
 				))}

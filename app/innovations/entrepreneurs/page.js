@@ -1,6 +1,6 @@
 import React from 'react';
-import { data } from './data';
 import Image from 'next/image';
+import { entrepreneurs } from '@/data';
 
 export const metadata = {
 	title: 'Entrepreneurs',
@@ -9,7 +9,7 @@ export const metadata = {
 const Entrepreneurs = () => {
 	return (
 		<div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 py-10'>
-			{data.map((item, i) => (
+			{entrepreneurs.map((item, i) => (
 				<div
 					key={i}
 					className='ccard w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow rounded-xl'

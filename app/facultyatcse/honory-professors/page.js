@@ -1,7 +1,7 @@
 import React from 'react';
-import { data } from './data';
 import moment from 'moment';
 import Link from 'next/link';
+import { honProf } from '@/data';
 
 export const metadata = {
 	title: 'Honoray Professors',
@@ -12,7 +12,7 @@ const HonoryProfessors = () => {
 		<div className='px-5 py-10'>
 			<h1 className='title pb-10'>Honory Professors</h1>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-				{data.map((prof) => (
+				{honProf.map((prof) => (
 					<div
 						key={prof.name}
 						class='card w-full bg-secondary hover:shadow-primary shadow-sm hover:shadow-md transition-shadow'

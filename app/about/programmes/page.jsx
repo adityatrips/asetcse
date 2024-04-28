@@ -1,71 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-let ugPrograms = [
-	{
-		name: 'B. Tech in Computer Science & Engineering',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering + MBA',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering - 3 Contienent',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering - International',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering - IOT & Cyber Security',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering - Data Science',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'B. Tech in Computer Science & Engineering - Evening',
-		duration: '4 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-];
-
-let pgPrograms = [
-	{
-		name: 'M. Tech in Computer Science & Engineering',
-		duration: '2 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'M. Tech in Data Science',
-		duration: '2 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-	{
-		name: 'M. Tech in Cyber Security',
-		duration: '2 years',
-		nonSponsored: '₹ 2,65,000',
-		sponsored: '₹ 3,10,000',
-	},
-];
+import { ugPrograms, pgPrograms } from '@/data';
 
 export const metadata = {
 	title: 'Programmes Offered',
