@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const flowbite = require('flowbite-react/tailwind');
+
 module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
+		flowbite.content(),
 	],
 	theme: {
 		extend: {
@@ -24,26 +27,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('daisyui')],
-	daisyui: {
-		base: true,
-		styled: true,
-		utils: true,
-		themes: [
-			{
-				dark: {
-					...require('daisyui/src/theming/themes')['dark'],
-					primary: '#ffcc29',
-					secondary: '#2086bf',
-					'--daisyui-text-color': '#fff',
-				},
-				light: {
-					...require('daisyui/src/theming/themes')['light'],
-					primary: '#ffcc29',
-					secondary: '#2086bf',
-					'--daisyui-text-color': '#000',
-				},
-			},
-		],
-	},
+	plugins: [require('daisyui'), flowbite.plugin()],
 };

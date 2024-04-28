@@ -2,6 +2,7 @@ import { Rubik, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Navbar from '/components/shared/Navbar';
 import Footer from '/components/shared/Footer';
+import { Flowbite } from 'flowbite-react';
 
 const rubik = Rubik({
 	subsets: ['latin', 'latin-ext'],
@@ -30,9 +31,11 @@ export default function RootLayout({ children }) {
 			className={rubik.className}
 		>
 			<body className={'min-h-[100vh]'}>
-				<Navbar />
-				{children}
-				<Footer />
+				<Flowbite>
+					<Navbar />
+					{children}
+					<Footer />
+				</Flowbite>
 			</body>
 		</html>
 	);

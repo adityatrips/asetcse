@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+nav > div {
+	@apply md:justify-center w-full !important;
+}
+
+button[aria-haspopup='menu'] {
+	padding: 0.5rem 0 !important;
+	@apply hover:text-primary !important;
+}
+
+div[data-testid='flowbite-navbar-collapse'] > ul > li > a {
+	@apply m-0 p-0 h-10 items-center flex hover:text-primary hover:bg-[transparent] border-0;
+}
+
 :root {
 	--primary: #dfb323;
 	--secondary: #2086bf;
