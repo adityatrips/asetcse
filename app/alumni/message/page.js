@@ -1,17 +1,11 @@
-'use client';
-
 import React, { useEffect } from 'react';
 import { alumniMessages } from '@/data';
 
-// export const metadata = {
-// 	title: 'Alumni Messages',
-// };
+export const metadata = {
+	title: 'Alumni Messages',
+};
 
 const AlumniMessage = () => {
-	useEffect(() => {
-		console.log(alumniMessages.length);
-	});
-
 	return (
 		<div className='grid grid-cols-1 md:grid-cols-2 px-5 py-10 gap-5'>
 			{alumniMessages.map((item, i) => (

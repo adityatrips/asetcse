@@ -6863,3 +6863,346 @@ export const alumniMessages = [
 			'All the learning, exploring, organizing, thinking, discussing, creating, innovating, understanding, sharing, interacting, studying, researching and dreaming, Amity gives us all. It prepares us for life in the corporate world and beyond. From Technology to Leadership, from Research to Communication, from Organizing to Team Building and from Local to Global. Looking back in time, organizing tech events for IET, being a Microsoft Student Partner, Organizing and participating in lot of seminars, talks, knowledge sharing sessions, exploring new ideas, following thought leaders, exposure to industry trends and global opportunities, raising voice on social causes through plays or dance forms. Thank you Abhay Bansal Sir for always motivating us to push the envelope, my Mentor Abhishek Sir and Subhash Sir and all my professor.',
 	},
 ];
+export const internationalVisits = [
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/1.jpg'))
+		),
+		text: 'Visit to Melbourne Zoo with ASET Students',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/2.jpg'))
+		),
+		text: 'Lecture at Swinburne University. Prof. B.P. Sehgal Director Law Department accompanying Amity Faculty',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/3.jpg'))
+		),
+		text: 'Visit to Factory of Future @ Swinburne Campus',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/4.jpg'))
+		),
+		text: 'Visit to Sea life with ASET Students @Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/5.jpg'))
+		),
+		text: 'Visit to River Cruise @ Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/6.jpg'))
+		),
+		text: 'Faculties@SAP 2017',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/7.jpg'))
+		),
+		text: 'Visit to Melbourne Zoo @ Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/8.jpg'))
+		),
+		text: 'Visit to RMIT University@ Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/9.jpg'))
+		),
+		text: 'From Right : Dr. Navleen Kaur,Prof.B.P.Sehgal, Mr. Stephen Manallack,Prof.Ajay Kapoor, Mr.Ashish Kashyap, Dr.Anushree Tondon',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/10.jpg'))
+		),
+		text: 'Visit to Victoria University @ Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/11.jpg'))
+		),
+		text: 'Lecture @ Swinburne Campus',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/12.jpg'))
+		),
+		text: '',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/13.jpg'))
+		),
+		text: 'Distribution of Certificates During Concluding Ceremony by Prof. John Web',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/14.jpg'))
+		),
+		text: 'Visit to Melbourne Star @ Melbourne',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/15.jpg'))
+		),
+		text: 'Visit to Victoria University',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/16.jpg'))
+		),
+		text: 'Concluding Ceremony @ Swinburne Campus',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/18.jpg'))
+		),
+		text: 'Concluding Ceremony @ Swinburne Campus with Prof.John Web, Louisa De Vries from Swinburne Campus and Faculty from Amity University Noida',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/19.jpg'))
+		),
+		text: 'Distribution of Certificates during Concluding Ceremony @ Swinburne Campus by Prof.John Web accompanying by Dr. Navleen Kaur, Mr. Ashish Kashyap and Mr.Priyank Srivastva',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/20.jpg'))
+		),
+		text: 'ASET students @ Swinburne Campus',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/21.jpg'))
+		),
+		text: 'Prof. (Dr.) Abhay Bansal, HoD, CSE, Jt. Acting Head, ASET and Director, DICET with Prof. K Baskaran, Associate Dean (Int.) Chair in Civil Engineering, Faculty of Science, Engineering and Built Environment. SAP 2016 engineering students visited the research lab of Deakin University and interacted with their professors about latest research trends and procedures for admissions in Masters. Semester Student Exchange of 4 students from ASET (2 from MAE & 2 from CSE) for July 2016 Session Is proposed and corresponding 4 students from Deakin would come to ASET, Noida for Semester under this exchange.',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/22.jpg'))
+		),
+		text: 'Prof. (Dr.) Abhay Bansal, HoD, CSE, Jt. Acting Head, ASET and Director, DICET and Mr. Ankur Chaudhary, Faculty, CSE, ASET with RMIT Officials',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/23.jpg'))
+		),
+		text: 'Prof. (Dr.) Abhay Bansal, HoD, CSE, Jt. Acting Head, ASET and Director, DICET with Dr. Graeme Salter, Director, Entrepreneurship, International Engagement, School of Computing, Engineering & Mathematics and Dr. Paul Davies, Lead Director of Academic Program-Computing & ICT, School of Computing, Engineering & Mathematics',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/24.jpg'))
+		),
+		text: 'Visit to Imperial College London',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/25.jpg'))
+		),
+		text: 'Visit to Drexel University USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/26.jpg'))
+		),
+		text: 'Visit to Imperial College London',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/27.jpg'))
+		),
+		text: 'Visit to Imperial College London',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/28.jpg'))
+		),
+		text: 'Visit to Imperial College London',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/29.jpg'))
+		),
+		text: 'Visit to Montclair University USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/30.jpg'))
+		),
+		text: 'Visit to Montclair University USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/31.jpg'))
+		),
+		text: 'Visit to Queen Mary University of London',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/32.jpg'))
+		),
+		text: 'Visit to University of Northampton UK',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/33.jpg'))
+		),
+		text: 'Panel Discussion on South South Cooperation and UN Development System at UN Head Quarters, New York',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/34.jpg'))
+		),
+		text: 'Visit to Mont Clair University, New Jersey',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/35.jpg'))
+		),
+		text: 'Visit to Cornell University, New York',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/36.jpg'))
+		),
+		text: 'Visit to Robotics Lab, Cambridge University, New York',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/37.jpg'))
+		),
+		text: 'Visit to Wharton University, Pennsylvania',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/38.jpg'))
+		),
+		text: 'Visit to Niagara Falls, USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/39.jpg'))
+		),
+		text: 'Students at Long Island Oakdale Campus, New York',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/40.jpg'))
+		),
+		text: 'Holi Celebration at Adelphi University, USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/41.jpg'))
+		),
+		text: 'Communication Symposium by Amity Education Group, USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/42.jpg'))
+		),
+		text: 'Visit to Adelphi University, USA',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/43.jpg'))
+		),
+		text: 'Visit to Corning Museum of Glass',
+	},
+	{
+		img: JSON.parse(
+			JSON.stringify(require('./images/international-visits/44.jpg'))
+		),
+		text: 'Visit to Drexel University, USA',
+	},
+];
+export const intlSpeakers = [
+	{
+		name: 'Tushar Manchanda',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			'Before joining Amity, I was well aware about the immense pool of opportunities this university offered to its students. Being able to grab one was surreal for me. BRICS Educational Internship Programme was one of a kind. This internship was on scholarship basis with vacancy of just 25 students from all over India and offered multiple courses to choose from. I knew it was very difficult for me to actually get selected for this but I believed in myself and participated in the selection process. On receiving my selection letter, I was over the moon but also in a state of disbelief. I never knew that I had it in me to actually achieve such a big milestone. From here, my journey of making new friends, learning new concepts and great international exposure began. I was selected for the portfolio of International Business and Project Management. Coming from a technical background, it was a new challenge/experience for me to gain expertise in this profile.\nWe were assisted by Dr. Manoj Sharma Sir at each and every step of our journey. Before embarking on this international voyage, Prof. Dr. Abhay Bansal Sir and Dr. Garima Aggarwal Ma’am helped us clear all our doubts and kept us motivated. They were kind enough to spare out time from their busy schedule to help us prepare for the challenges we would be facing. Without the assistance of our faculty, it would’ve been a struggle for us.\nIn the internship, I got the opportunity to connect with the people from different parts of the world like Russia, South Africa and Brazil (to name a few). Due to the unprecedented times amid the COVID-19 pandemic, the students from China were not able to join us physically but thanks to technology, we were virtually connected to each other. I studied subjects like International Marketing and Corporate Finance, participated in events like MUN and BRICS Dialogue, travelled across the city of Vladivostok trying different cuisines and exploring the culture and people. This internship was a dream come true for me.\nLast but not the least, I would like to again thank Prof. Dr. Abhay Bansal Sir, Dr. Manoj Sharma Sir, Dr. Garima Aggarwal Ma’am and our faculty for their constant support throughout our internship period. I would also advice all the students to actively seek out life changing opportunities like this and always believe in yourself!',
+	},
+	{
+		name: 'Aditya Tharad',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			'I first came to know about the senior certificate program when Prof. Dr. Abhay Bansal sir introduced it to us in an orientation held for in-campus recruitment. As soon as I heard about the program, I realized the benefits of this program, both intellectual and professional, I had no reason to turn down this offer. It has always been my dream to study in United States of America and Amity University helped me achieve this dream.\nThe application process was very easy, all thanks to Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni and Dr. Garima Aggarwal. They all motivated me and helped me through each and every step in the application process.\nI came here with seven other friends from Amity. We reached here almost a week prior to the commencement date to get settled, but it took us just a few days to get settled in. We received a lot of help from our seniors who were already here pursuing their masters. The journey so far has been very exciting, and we are really overwhelmed by the education standards.\nA standout amongst the best parts of the University of Florida is the friendly environment. We get the chance to set off for college in a climate that every other person sees while out of town. There are several associations one can join. Even though it is a plethora’s campus, everybody including the students, teachers and administration truly invest the push to make an inviting environment. They not only provide resources necessary to allow a new student to acclimate successfully into campus life but also to flourish via the provision of programs such as freshmen orientation, study and tutoring sessions, wellness and counseling services, law services, job fairs, internship fairs, and recreational activities.\nI would like more and more students to enroll for this program. This is a life time opportunity being provided by Amity, I don’t think one should miss it.',
+	},
+	{
+		name: 'Atharv Shiromani',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			'The University of Florida program is once in a life time opportunity for students seeking for masters abroad. This programs really helps you set career on a defined path and provides you with the opportunity you may not know about. The main benefit of this program is that you start your master’s courses while you are in the last semester of your bachelors and if you continue with it you can complete your masters with 6 months to spare and that can be used for variety of important things like internships. There are lot of opportunities that we as student are unaware of and once, we get this exposure we get a plethora of options to choose from. I recommend each person seeking for masters to at least try out this course and decide for themselves. I am writing this, while I am pursuing this course and believe its worth every bit. This course will entirely change you as a student and there is no easy way to get into such a great university.',
+	},
+	{
+		name: 'Mohit Garg',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			'I would like to thank AMITY UNIVERSITY for giving me this life Changing opportunity. It is not easy to take admission in such a prestigious university. I spent almost 5 months in the University of Florida. It was a life changing experience for me. When I was in India, Many people said “Mohit you will face Discrimination in foreign University”. But truly speaking, I have never saw such a Friendly and helpful environment in my entire life. In American Universities, people come from around the world. The respect given by Americans is really mind blowing. Personally, I am thanking Dr. Abhay Bansal for giving me this life changing opportunity.\nIn USA, the social environment is totally different. When a masters student went there after his/her graduation, he can clearly feel the independence in work environment. In India, I don’t have much knowledge about startups, and I don’t even know about the trending technologies. But as I went there, I saw that on a massive scale the US government use the computer science technologies in their daily. The US is technology-oriented country. Even small villages of US use very expensive but essential technologies. So as a computer science graduate, it was a place for me to think about how I should develop such important technologies which can help people even in my own country. In America, the environment is workaholic. Everyone does their job with responsibility and loyalty. I worked in subway for like one and half month. It was so enjoying working there and the payroll is also good enough.\nMy life is completely changed by joining new technologies. I know what I have to do and how to achieve my goals. I am constantly working towards my goals. Thanks again to our HOI, Dr. Abhay Bansal for offering me this amazing opportunity.',
+	},
+	{
+		name: 'Shubham Kathuria',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			"When I get to know about this opportunity, I was not sure whether it was a good opportunity or not because I never heard about the University of Florida before Prof. Dr. Abhay Bansal sir introduced it to us. When I discussed this with my friends and family, I merely get a positive response, so I was very confused about what to do. So, after thinking a lot, I decided to grab this opportunity because I will not get a better opportunity than this.\nLater, I found that the application process was so easy compared to when you apply on your own. I got all the documents including visa, I20 form with me without any tension and hardship. All thanks to Amity University, Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni, and Dr. Garima Aggarwal.When we reached here people from IGSA (Indian Student Graduate Association) came to receive us at the airport and provided us with temporary accommodation for two days so we didn't find any difficulty to settle down to our own apartments. And when I met my seniors who were already pursuing their masters, they treated me like a brother and helped me at every step during the semester.\nLater, I found that the application process was so easy compared to when you apply on your own. I got all the documents including visa, I20 form with me without any tension and hardship. All thanks to Amity University, Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni, and Dr. Garima Aggarwal.\nWhen I get to know about this opportunity, I was not sure whether it was a good opportunity or not because I never heard about the University of Florida before Prof. Dr. Abhay Bansal sir introduced it to us. When I discussed this with my friends and family, I merely get a positive response, so I was very confused about what to do. So, after thinking a lot, I decided to grab this opportunity because I will not get a better opportunity than this.",
+	},
+	{
+		name: 'Sania Srivastava',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			'For someone who has planned for a long time for obtaining a Masters degree in a place like United States of America, this opportunity offered by Amity University was hard to miss. I got to know about this program in the Summer of 2018, effectively the time before I was to appear for placements in the seventh semester. Soon after we met with Prof. Dr. Abhay Bansal who explained to us how the senior certificate program allows us to spend the entire last semester of B.Tech at University of Florida followed by admission to full-time admission to the University for continuing Master of Science in Computer Science. This program was not only academically practical and efficient, it was also financially extremely reasonable.\nProf. Dr. Abhay Bansal helped us and updated us about the procedure throughout, including arranging a one-on-one meeting with our seniors who attended the same program and were then absorbed for continuing their Masters at University of Florida. We were fully convinced and soon completed the application process and reached University of Florida in the January of 2019.\nWe soon found ourselves studying Master-level courses in Computer Science amongst students from all over the world, doing group projects with people with varied skills and interests. Moreover, the campus was so beautiful, public transportation for getting to the campus was free of cost for students and the University Administration was extremely cooperative. Our seniors from the same program played a pivotal role in guiding us not just academically, but also being a constant emotional support and helping us get comfortable in a new environment.\nAt the University, Distinguished Prof. Dr. Sartaj Sahni guided us with everything including choosing the courses, handling a new curriculum and even exploring opportunities in and around the campus. This opportunity has helped me transition from bachelors to masters quickly and easily with constant help and support from both Amity University and University of Florida. Having successfully completed the Senior Certificate Program, I am all set to attend the University of Florida for full-time MS in Computer Science from August,2019.',
+	},
+	{
+		name: 'Vriddhi Pai',
+		programme: 'B.Tech CSE',
+		batch: '2017-21',
+		exposure: 'BRICS Educational Internship Programme',
+		uni: 'Far Eastern Federal University, Vladivostok, Russia',
+		message:
+			"I firstly came to know about this program through the first in-campus recruitment session held, where Prof Dr. Abhay Bansal Sir mentioned about the great opportunity that we have for taking a Senior Certificate Program, in University Of Florida. Just as he started explaining about the whole program, I was so convinced to not let go of such great opportunity. I always planned to do my masters from somewhere in United States and Amity University helped me get closer to my dream by letting me do so, more early than I ever planned to.\nThe application process was really smooth, i was constantly guided by Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni Sir and Dr. Garima Aggarwal Ma'am. They always motivated me and helped me throughout the whole process and also provided me with the details of our seniors, who are already pursuing the master program to explore more about the program.\nAll together we came as a group of eight people for the program, it took us a few days to get settled here and understand the may things work in this country. Our seniors have been a great help here and they have guided and made us aware about all the important elements that we need to be aware of. My journey here has been really inspiring, I have explored so much. The professor and students hem are amiable, they always encourage you to move forward.",
+	},
+	{
+		name: 'Abhishek Bhatt',
+		programme: 'B.Tech CSE',
+		batch: '',
+		exposure: '',
+		uni: 'University of Florida, USA',
+		message:
+			'I first came to know about the senior certificate program when Prof. Dr. Abhay Bansal sir introduced it to us in an orientation at the starting of our 7th semester. As soon as I heard about the program, I realized the benefits of this program, both intellectual and professional, I had no reason to turn down this offer. It has always been my dream to study in U.S.A. and Amity University helped me achieve this dream.\nThe application process was very easy, all thanks to Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni and Dr. Garima Aggarwal. They were all there to help me and guide me through each and every step of the application process.I came here with seven other friends from Amity. We reached here almost a week prior to the commencement date to get settled, but it took us just a few days to get settled in. We received a lot of help from our seniors who were already here pursuing their masters. The journey so far has been very exciting, and we are really overwhelmed by the education standards.\nA standout amongst the best parts of the University of Florida is the friendly environment. We get the chance to set off for college in a climate that every other person sees while out of town. There are several associations one can join. Even though it is a plethora’s campus, everybody including the students, teachers and administration truly invest the push to make an inviting environment. They not only provide resources necessary to allow a new student to acclimate successfully into campus life but also to flourish via the provision of programs such as freshmen orientation, study and tutoring sessions, wellness and counseling services, law services, job fairs, internship fairs, and recreational activities like gator nights.\nI would like more and more students to enroll for this program. This is a lifetime opportunity being provided by Amity, I don’t think anyone should miss it.',
+	},
+	{
+		name: 'Aditya Tharad',
+		programme: 'B.Tech CSE',
+		batch: '',
+		exposure: '',
+		uni: 'University of Florida, USA',
+		message:
+			'I first came to know about the senior certificate program when Prof. Dr. Abhay Bansal sir introduced it to us in an orientation at the starting of our 7th semester. As soon as I heard about the program, I realized the benefits of this program, both intellectual and professional, I had no reason to turn down this offer. It has always been my dream to study in U.S.A. and Amity University helped me achieve this dream.\nThe application process was very easy, all thanks to Prof. Dr. Abhay Bansal Sir, Prof. Dr. Sartaj Sahni and Dr. Garima Aggarwal. They were all there to help me and guide me through each and every step of the application process.I came here with seven other friends from Amity. We reached here almost a week prior to the commencement date to get settled, but it took us just a few days to get settled in. We received a lot of help from our seniors who were already here pursuing their masters. The journey so far has been very exciting, and we are really overwhelmed by the education standards.\nA standout amongst the best parts of the University of Florida is the friendly environment. We get the chance to set off for college in a climate that every other person sees while out of town. There are several associations one can join. Even though it is a plethora’s campus, everybody including the students, teachers and administration truly invest the push to make an inviting environment. They not only provide resources necessary to allow a new student to acclimate successfully into campus life but also to flourish via the provision of programs such as freshmen orientation, study and tutoring sessions, wellness and counseling services, law services, job fairs, internship fairs, and recreational activities like gator nights.\nI would like more and more students to enroll for this program. This is a lifetime opportunity being provided by Amity, I don’t think anyone should miss it.',
+	},
+];
