@@ -148,6 +148,38 @@ const Nav = () => {
 						International Speakers
 						Gallery
 				*/}
+				<Dropdown
+					inline
+					className='bg-secondary justify-center   hover:bg-secondary hover:text-primary'
+					floatingArrow
+					label='International Relations'
+					dismissOnClick
+				>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/international/students'
+					>
+						Students in Foreign Universities
+					</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/international/visits'
+					>
+						International Visits
+					</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/international/student-feedback'
+					>
+						Student Feedback
+					</Dropdown.Item>
+					<Dropdown.Item
+						className='bg-secondary w-full  hover:bg-secondary hover:text-primary '
+						href='/international/gallery'
+					>
+						Gallery
+					</Dropdown.Item>
+				</Dropdown>
 			</Navbar.Collapse>
 		</Navbar>
 	);

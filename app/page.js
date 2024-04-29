@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
 
 import mkpandey from '/images/mkpandey.jpeg';
 import amityCampus from '/images/Amity-campus.jpg';
@@ -199,7 +198,7 @@ export default function HomePage() {
 					<h1 className='title'>Placement Partners</h1>
 					<div
 						id='carousel'
-						className='carousel carousel-center w-full p-4 space-x-4 bg-secondary rounded-box'
+						className='carousel carousel-center w-full p-4 space-x-4 rounded-box'
 					>
 						{imgs.map((img, i) => (
 							<div
