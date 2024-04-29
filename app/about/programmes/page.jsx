@@ -18,7 +18,7 @@ const Programs = () => {
 							<Link
 								key={index}
 								class='group flex flex-col bg-secondary hover:shadow-primary shadow-md rounded-xl hover:shadow-md transition'
-								href='#'
+								href='https://amity.edu/aset/programmes-UG.asp'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center gap-2'>
@@ -62,7 +62,7 @@ const Programs = () => {
 							<Link
 								key={index}
 								class='group flex flex-col bg-secondary hover:shadow-primary shadow-md rounded-xl hover:shadow-md transition'
-								href='#'
+								href='https://amity.edu/aset/programmes-PG.asp'
 							>
 								<div class='p-10 md:p-5'>
 									<div class='flex justify-between items-center'>
