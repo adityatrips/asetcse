@@ -39,9 +39,6 @@ Provide contact information for the CSE department. Include the department's add
 
 - [Aditya Tripathi](https://github.com/adityatrips)
 - [cyanxcode](https://github.com/cyanxcode)
-- [Chinmay Singhal](https://github.com/Chinmay-Singhal)
-- [Nandani Giri](https://github.com/EzeeBee22)
-- [vinsmoke0003](https://github.com/vinsmoke0003)
 
 ## License
 
